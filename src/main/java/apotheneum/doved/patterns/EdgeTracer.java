@@ -526,26 +526,20 @@ public class EdgeTracer extends ApotheneumPattern {
         
         Apotheneum.Cube cube = Apotheneum.cube;
         
-        // Front face is face 0 - create a straight horizontal line across the bottom
+        // Front face is face 0 - create a truly flat horizontal line at consistent height
         int frontFace = 0;
         Apotheneum.Cube.Face cubeFace = cube.faces[frontFace];
         
+        // For a truly flat line, use the bottom-most available LED from each column
+        // This ensures all LEDs are at the same physical height (door level)
         for (int col = 0; col < cubeFace.columns.length; col++) {
             int globalCol = frontFace * Apotheneum.GRID_WIDTH + col;
             int available = cube.exterior.available(globalCol);
             LXModel column = cubeFace.columns[col];
             
-            // Check if this column is part of a door
-            boolean isInDoor = available < Apotheneum.GRID_HEIGHT;
-            
-            if (!isInDoor) {
-                // Normal bottom edge - add the bottom point
-                cubeFrontFlatPath.add(column.points[column.points.length - 1]);
-            } else {
-                // Door column - add the bottom-most available point (top of door opening)
-                if (available > 0) {
-                    cubeFrontFlatPath.add(column.points[available - 1]);
-                }
+            // Always use the last available LED (bottom-most) from each column
+            if (available > 0 && (available - 1) < column.points.length) {
+                cubeFrontFlatPath.add(column.points[available - 1]);
             }
         }
     }
@@ -557,25 +551,19 @@ public class EdgeTracer extends ApotheneumPattern {
         
         Apotheneum.Cube cube = Apotheneum.cube;
         
-        // Front face is face 0 - create a straight horizontal line across the bottom interior
+        // Front face is face 0 - create a truly flat horizontal line at consistent height interior
         int frontFace = 0;
         
+        // For a truly flat line, use the bottom-most available LED from each column
+        // This ensures all LEDs are at the same physical height (door level)
         for (int col = 0; col < Apotheneum.GRID_WIDTH; col++) {
             int globalCol = frontFace * Apotheneum.GRID_WIDTH + col;
             int available = cube.interior.available(globalCol);
             LXModel column = cube.interior.columns[globalCol];
             
-            // Check if this column is part of a door
-            boolean isInDoor = available < Apotheneum.GRID_HEIGHT;
-            
-            if (!isInDoor) {
-                // Normal bottom edge - add the bottom point
-                cubeFrontFlatPathInterior.add(column.points[column.points.length - 1]);
-            } else {
-                // Door column - add the bottom-most available point (top of door opening)
-                if (available > 0) {
-                    cubeFrontFlatPathInterior.add(column.points[available - 1]);
-                }
+            // Always use the last available LED (bottom-most) from each column
+            if (available > 0 && (available - 1) < column.points.length) {
+                cubeFrontFlatPathInterior.add(column.points[available - 1]);
             }
         }
     }
