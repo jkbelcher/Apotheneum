@@ -305,7 +305,7 @@ public class Hyperspace extends LXPattern implements UIDeviceControls<Hyperspace
     }
   }
   
-  // Efficient star rendering - finds closest LED in 3D space with distance threshold
+  // Efficient star rendering - finds closest LED in 3D space
   private void renderStarAtPoint(float x, float y, float z, int color, float brightness) {
     // Quick bounds check
     if (x < 0 || x > 1 || y < 0 || y > 1 || z < 0 || z > 1) return;
