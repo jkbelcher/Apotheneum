@@ -1,6 +1,6 @@
 {
   "version": "1.1.1-SNAPSHOT",
-  "timestamp": 1755712758777,
+  "timestamp": 1755715324304,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -706,7 +706,7 @@
           "autoCycleMode": 1,
           "autoCycleMode/name": "RANDOM",
           "autoCycleTimeSecs": 47.0,
-          "autoCycleCursor": 9,
+          "autoCycleCursor": 3,
           "triggerSwatchCycle": false,
           "expandedPerformance": true,
           "label1": "1",
@@ -725,7 +725,7 @@
               "modulationsExpanded": true
             },
             "parameters": {
-              "label": "Burn 2",
+              "label": "Cool",
               "recall": false,
               "autoCycleEligible": true
             },
@@ -746,7 +746,7 @@
                   "period": 30.0,
                   "primary/brightness": 100.0,
                   "primary/saturation": 100.0,
-                  "primary/hue": 0.0,
+                  "primary/hue": 182.625,
                   "secondary/brightness": 100.0,
                   "secondary/saturation": 100.0,
                   "secondary/hue": 120.0
@@ -767,8 +767,8 @@
                   "mode/name": "FIXED",
                   "period": 30.0,
                   "primary/brightness": 100.0,
-                  "primary/saturation": 100.0,
-                  "primary/hue": 19.3359375,
+                  "primary/saturation": 82.24609375,
+                  "primary/hue": 220.91014099121094,
                   "secondary/brightness": 100.0,
                   "secondary/saturation": 100.0,
                   "secondary/hue": 120.0
@@ -790,7 +790,7 @@
                   "period": 30.0,
                   "primary/brightness": 100.0,
                   "primary/saturation": 100.0,
-                  "primary/hue": 0.0,
+                  "primary/hue": 240.0,
                   "secondary/brightness": 100.0,
                   "secondary/saturation": 100.0,
                   "secondary/hue": 120.0
@@ -811,8 +811,8 @@
                   "mode/name": "FIXED",
                   "period": 30.0,
                   "primary/brightness": 100.0,
-                  "primary/saturation": 100.0,
-                  "primary/hue": 233.39060974121094,
+                  "primary/saturation": 85.86588287353516,
+                  "primary/hue": 89.671875,
                   "secondary/brightness": 100.0,
                   "secondary/saturation": 100.0,
                   "secondary/hue": 120.0
@@ -834,7 +834,7 @@
                   "period": 30.0,
                   "primary/brightness": 100.0,
                   "primary/saturation": 100.0,
-                  "primary/hue": 210.41015625,
+                  "primary/hue": 0.0,
                   "secondary/brightness": 100.0,
                   "secondary/saturation": 100.0,
                   "secondary/hue": 120.0
@@ -3460,7 +3460,7 @@
           "label": "Mixer",
           "crossfader": 0.5,
           "crossfaderBlendMode": 0,
-          "focusedChannel": 2,
+          "focusedChannel": 7,
           "focusedChannelAux": 3,
           "cueA": false,
           "cueB": false,
@@ -3579,7 +3579,7 @@
             },
             "parameters": {
               "label": "Global",
-              "fader": 0.0,
+              "fader": 1.0,
               "arm": false,
               "selected": false,
               "stopClips": false,
@@ -3610,7 +3610,7 @@
               "transitionEnabled": true,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 6,
+              "focusedPattern": 5,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -3634,7 +3634,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 2,
+            "patternIndex": 5,
             "patterns": [
               {
                 "id": 10689933,
@@ -4526,10 +4526,10 @@
                   "modulationColor": 0,
                   "modulationControlsExpanded": true,
                   "modulationsExpanded": true,
-                  "expanded": true,
+                  "expanded": false,
                   "expandedCue": true,
                   "expandedAux": true,
-                  "modulationExpanded": true
+                  "modulationExpanded": false
                 },
                 "parameters": {
                   "label": "Portals",
@@ -4874,9 +4874,9 @@
             },
             "parameters": {
               "label": "Cylinder",
-              "fader": 1.0,
+              "fader": 0.0,
               "arm": false,
-              "selected": true,
+              "selected": false,
               "stopClips": false,
               "enabled": true,
               "cue": false,
@@ -5469,8 +5469,8 @@
                   "autoMute": true,
                   "cueActive": false,
                   "auxActive": false,
-                  "midpoint": 50.0,
-                  "contrast": 305.7558891745915,
+                  "midpoint": 47.24609332624823,
+                  "contrast": 292.7619318461013,
                   "minLevel": 0.0,
                   "maxLevel": 100.0,
                   "invert": 0.0,
@@ -5561,7 +5561,7 @@
               "midiFilter/noteRange": 128,
               "midiFilter/minVelocity": 1,
               "midiFilter/velocityRange": 127,
-              "view": 0,
+              "view": 17,
               "compositeMode": 0,
               "compositeMode/name": "PLAYLIST",
               "compositeDampingEnabled": true,
@@ -5573,7 +5573,7 @@
               "transitionEnabled": true,
               "transitionTimeSecs": 5.0,
               "transitionBlendMode": 0,
-              "focusedPattern": 3,
+              "focusedPattern": 4,
               "triggerPatternCycle": false,
               "launchPatternCycle": false
             },
@@ -5597,7 +5597,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 3,
+            "patternIndex": 4,
             "patterns": [
               {
                 "id": 10699514,
@@ -5962,10 +5962,10 @@
                   "expanded": true,
                   "expandedCue": true,
                   "expandedAux": true,
-                  "modulationExpanded": true
+                  "modulationExpanded": false
                 },
                 "parameters": {
-                  "label": "Portals",
+                  "label": "ZigZag",
                   "midiFilter/enabled": true,
                   "midiFilter/channel": 16,
                   "midiFilter/channel/name": "OMNI",
@@ -6152,15 +6152,15 @@
                       "cubeMode": 0,
                       "cubeMode/name": "MIRROR",
                       "cubeAngle": 0.0,
-                      "cubeSegments": 4,
+                      "cubeSegments": 2,
                       "cylinderMode": 0,
                       "cylinderMode/name": "MIRROR",
                       "cylinderAngle": 45.0,
                       "cylinderSegments": 0,
-                      "horizonPosition": 0.37593750294763595,
+                      "horizonPosition": 0.8434375047218055,
                       "horizonCylinder": false,
                       "horizonCube": true,
-                      "invertHorizon": false
+                      "invertHorizon": true
                     },
                     "children": {
                       "modulation": {
@@ -6213,6 +6213,252 @@
                     "deviceVersion": -1
                   }
                 ]
+              },
+              {
+                "id": 10699839,
+                "class": "heronarts.lx.pattern.form.OrboxPattern",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": false,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Tumble",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 1.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": true,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "shape1": 3,
+                  "shape1/name": "SQUARE",
+                  "shape2": 4,
+                  "shape2/name": "CYLINDER",
+                  "shapeLerp": 0.0,
+                  "fill": 0.0,
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 0.5,
+                  "xAmt": 1.0,
+                  "yAmt": 1.0,
+                  "zAmt": 1.0,
+                  "yaw": 0.0,
+                  "pitch": 0.0,
+                  "roll": 0.0,
+                  "shearX": 0.0,
+                  "shearY": 0.0,
+                  "shearZ": 0.0,
+                  "radius": 0.6898437528871,
+                  "width": 0.0041796746631402905,
+                  "fade": 0.1,
+                  "invert": 0.0,
+                  "level": 1.0,
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10699840,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [
+                      {
+                        "id": 10699852,
+                        "class": "heronarts.lx.modulator.CycleModulator",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Cycle",
+                          "running": true,
+                          "trigger": false,
+                          "reset": false,
+                          "midiSource/index": 0,
+                          "midiFilter/enabled": true,
+                          "midiFilter/channel": 16,
+                          "midiFilter/channel/name": "OMNI",
+                          "midiFilter/minNote": 0,
+                          "midiFilter/noteRange": 128,
+                          "midiFilter/minVelocity": 1,
+                          "midiFilter/velocityRange": 127,
+                          "speedUnipolar": 0.18226562498603016,
+                          "speedBipolar": 1.0,
+                          "speedRangeHz": 0.1,
+                          "speedPolarity": 0,
+                          "speedPolarity/name": "UNIPOLAR"
+                        },
+                        "children": {}
+                      },
+                      {
+                        "id": 10699854,
+                        "class": "heronarts.lx.modulator.CycleModulator",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Cycle",
+                          "running": true,
+                          "trigger": false,
+                          "reset": false,
+                          "midiSource/index": 0,
+                          "midiFilter/enabled": true,
+                          "midiFilter/channel": 16,
+                          "midiFilter/channel/name": "OMNI",
+                          "midiFilter/minNote": 0,
+                          "midiFilter/noteRange": 128,
+                          "midiFilter/minVelocity": 1,
+                          "midiFilter/velocityRange": 127,
+                          "speedUnipolar": 0.09640624711755663,
+                          "speedBipolar": 1.0,
+                          "speedRangeHz": 0.1,
+                          "speedPolarity": 0,
+                          "speedPolarity/name": "UNIPOLAR"
+                        },
+                        "children": {}
+                      },
+                      {
+                        "id": 10699856,
+                        "class": "heronarts.lx.modulator.CycleModulator",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Cycle",
+                          "running": true,
+                          "trigger": false,
+                          "reset": false,
+                          "midiSource/index": 0,
+                          "midiFilter/enabled": true,
+                          "midiFilter/channel": 16,
+                          "midiFilter/channel/name": "OMNI",
+                          "midiFilter/minNote": 0,
+                          "midiFilter/noteRange": 128,
+                          "midiFilter/minVelocity": 1,
+                          "midiFilter/velocityRange": 127,
+                          "speedUnipolar": 0.08054687303956598,
+                          "speedBipolar": 1.0,
+                          "speedRangeHz": 0.1,
+                          "speedPolarity": 0,
+                          "speedPolarity/name": "UNIPOLAR"
+                        },
+                        "children": {}
+                      }
+                    ],
+                    "modulations": [
+                      {
+                        "source": {
+                          "id": 10699852,
+                          "path": "/modulation/modulator/1"
+                        },
+                        "target": {
+                          "componentId": 10699839,
+                          "parameterPath": "yaw",
+                          "path": "/yaw"
+                        },
+                        "id": 10699853,
+                        "class": "heronarts.lx.modulation.LXCompoundModulation",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LX",
+                          "enabled": true,
+                          "polarity": 0,
+                          "polarity/name": "UNIPOLAR",
+                          "range": 1.0
+                        },
+                        "children": {}
+                      },
+                      {
+                        "source": {
+                          "id": 10699854,
+                          "path": "/modulation/modulator/2"
+                        },
+                        "target": {
+                          "componentId": 10699839,
+                          "parameterPath": "pitch",
+                          "path": "/pitch"
+                        },
+                        "id": 10699855,
+                        "class": "heronarts.lx.modulation.LXCompoundModulation",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LX",
+                          "enabled": true,
+                          "polarity": 0,
+                          "polarity/name": "UNIPOLAR",
+                          "range": 1.0
+                        },
+                        "children": {}
+                      },
+                      {
+                        "source": {
+                          "id": 10699856,
+                          "path": "/modulation/modulator/3"
+                        },
+                        "target": {
+                          "componentId": 10699839,
+                          "parameterPath": "roll",
+                          "path": "/roll"
+                        },
+                        "id": 10699857,
+                        "class": "heronarts.lx.modulation.LXCompoundModulation",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LX",
+                          "enabled": true,
+                          "polarity": 0,
+                          "polarity/name": "UNIPOLAR",
+                          "range": 1.0
+                        },
+                        "children": {}
+                      }
+                    ],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": []
               }
             ]
           },
@@ -7243,17 +7489,17 @@
               "viewPatternLabel": false
             },
             "parameters": {
-              "label": "Drops",
-              "fader": 1.0,
+              "label": "Drop",
+              "fader": 0.0,
               "arm": false,
-              "selected": false,
+              "selected": true,
               "stopClips": false,
               "enabled": true,
               "cue": false,
               "aux": false,
               "crossfadeGroup": 0,
               "crossfadeGroup/name": "BYPASS",
-              "blendMode": 0,
+              "blendMode": 4,
               "autoMute": true,
               "midiSource/index": 0,
               "midiFilter/enabled": false,
@@ -7302,12 +7548,12 @@
                       "modulationsExpanded": true
                     },
                     "parameters": {
-                      "label": "AHDSR",
+                      "label": "Chev",
                       "running": true,
                       "trigger": false,
                       "reset": false,
                       "midiSource/index": 0,
-                      "midiFilter/enabled": true,
+                      "midiFilter/enabled": false,
                       "midiFilter/channel": 16,
                       "midiFilter/channel/name": "OMNI",
                       "midiFilter/minNote": 0,
@@ -7329,6 +7575,226 @@
                       "sustain": 1.0,
                       "release": 1000.0,
                       "shape": 0.23867187299765646,
+                      "manualTrigger": false,
+                      "targetTrigger": false,
+                      "midiVelocityResponse": 25.0,
+                      "midiNoteResponse": 0.0,
+                      "midiLegato": false
+                    },
+                    "children": {}
+                  },
+                  {
+                    "id": 10699910,
+                    "class": "heronarts.lx.modulator.MultiModeEnvelope",
+                    "internal": {
+                      "modulationColor": 2,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Orb-Rad",
+                      "running": true,
+                      "trigger": false,
+                      "reset": false,
+                      "midiSource/index": 0,
+                      "midiFilter/enabled": false,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "engage": false,
+                      "retrig": false,
+                      "stageMode": 3,
+                      "stageMode/name": "AD",
+                      "resetMode": false,
+                      "oneshot": true,
+                      "initial": 0.0,
+                      "peak": 1.0,
+                      "delay": 0.0,
+                      "attack": 0.0,
+                      "hold": 0.0,
+                      "decay": 3000.0,
+                      "sustain": 1.0,
+                      "release": 1000.0,
+                      "shape": 0.686406246619299,
+                      "manualTrigger": false,
+                      "targetTrigger": false,
+                      "midiVelocityResponse": 25.0,
+                      "midiNoteResponse": 0.0,
+                      "midiLegato": false
+                    },
+                    "children": {}
+                  },
+                  {
+                    "id": 10699919,
+                    "class": "heronarts.lx.modulator.MultiModeEnvelope",
+                    "internal": {
+                      "modulationColor": 2,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Orb-Lev",
+                      "running": true,
+                      "trigger": false,
+                      "reset": false,
+                      "midiSource/index": 0,
+                      "midiFilter/enabled": false,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "engage": false,
+                      "retrig": false,
+                      "stageMode": 2,
+                      "stageMode/name": "AHD",
+                      "resetMode": false,
+                      "oneshot": true,
+                      "initial": 0.0,
+                      "peak": 1.0,
+                      "delay": 0.0,
+                      "attack": 0.0,
+                      "hold": 0.0,
+                      "decay": 4000.0,
+                      "sustain": 1.0,
+                      "release": 1000.0,
+                      "shape": 0.0,
+                      "manualTrigger": false,
+                      "targetTrigger": false,
+                      "midiVelocityResponse": 25.0,
+                      "midiNoteResponse": 0.0,
+                      "midiLegato": false
+                    },
+                    "children": {}
+                  },
+                  {
+                    "id": 10699939,
+                    "class": "heronarts.lx.modulator.MultiModeEnvelope",
+                    "internal": {
+                      "modulationColor": 2,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Noise",
+                      "running": true,
+                      "trigger": false,
+                      "reset": false,
+                      "midiSource/index": 0,
+                      "midiFilter/enabled": false,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "engage": false,
+                      "retrig": false,
+                      "stageMode": 2,
+                      "stageMode/name": "AHD",
+                      "resetMode": false,
+                      "oneshot": true,
+                      "initial": 0.0,
+                      "peak": 1.0,
+                      "delay": 0.0,
+                      "attack": 0.0,
+                      "hold": 2000.0,
+                      "decay": 2000.0,
+                      "sustain": 1.0,
+                      "release": 1000.0,
+                      "shape": 0.0,
+                      "manualTrigger": false,
+                      "targetTrigger": false,
+                      "midiVelocityResponse": 25.0,
+                      "midiNoteResponse": 0.0,
+                      "midiLegato": false
+                    },
+                    "children": {}
+                  },
+                  {
+                    "id": 10699959,
+                    "class": "heronarts.lx.modulator.MultiModeEnvelope",
+                    "internal": {
+                      "modulationColor": 2,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Portals",
+                      "running": true,
+                      "trigger": false,
+                      "reset": false,
+                      "midiSource/index": 0,
+                      "midiFilter/enabled": false,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "engage": false,
+                      "retrig": false,
+                      "stageMode": 2,
+                      "stageMode/name": "AHD",
+                      "resetMode": false,
+                      "oneshot": true,
+                      "initial": 0.0,
+                      "peak": 1.0,
+                      "delay": 0.0,
+                      "attack": 0.0,
+                      "hold": 0.0,
+                      "decay": 4000.0,
+                      "sustain": 1.0,
+                      "release": 1000.0,
+                      "shape": 0.0,
+                      "manualTrigger": false,
+                      "targetTrigger": false,
+                      "midiVelocityResponse": 25.0,
+                      "midiNoteResponse": 0.0,
+                      "midiLegato": false
+                    },
+                    "children": {}
+                  },
+                  {
+                    "id": 10699985,
+                    "class": "heronarts.lx.modulator.MultiModeEnvelope",
+                    "internal": {
+                      "modulationColor": 2,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Quilt",
+                      "running": true,
+                      "trigger": false,
+                      "reset": false,
+                      "midiSource/index": 0,
+                      "midiFilter/enabled": false,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "engage": false,
+                      "retrig": false,
+                      "stageMode": 2,
+                      "stageMode/name": "AHD",
+                      "resetMode": false,
+                      "oneshot": true,
+                      "initial": 0.0,
+                      "peak": 1.0,
+                      "delay": 0.0,
+                      "attack": 0.0,
+                      "hold": 0.0,
+                      "decay": 4000.0,
+                      "sustain": 1.0,
+                      "release": 1000.0,
+                      "shape": -0.14914062296156771,
                       "manualTrigger": false,
                       "targetTrigger": false,
                       "midiVelocityResponse": 25.0,
@@ -7387,7 +7853,7 @@
                       "enabled": true,
                       "polarity": 0,
                       "polarity/name": "UNIPOLAR",
-                      "range": 1.0
+                      "range": 0.6881640624487773
                     },
                     "children": {}
                   },
@@ -7442,6 +7908,396 @@
                       "range": -0.18128906057972927
                     },
                     "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699910,
+                      "path": "/modulation/modulator/2"
+                    },
+                    "target": {
+                      "componentId": 10699897,
+                      "parameterPath": "radius",
+                      "path": "/pattern/2/radius"
+                    },
+                    "id": 10699913,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": -0.5437890524990507
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699919,
+                      "path": "/modulation/modulator/3"
+                    },
+                    "target": {
+                      "componentId": 10699897,
+                      "parameterPath": "compositeLevel",
+                      "path": "/pattern/2/compositeLevel"
+                    },
+                    "id": 10699921,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 1.0
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699939,
+                      "path": "/modulation/modulator/4"
+                    },
+                    "target": {
+                      "componentId": 10699922,
+                      "parameterPath": "compositeLevel",
+                      "path": "/pattern/3/compositeLevel"
+                    },
+                    "id": 10699940,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 1.0
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699939,
+                      "path": "/modulation/modulator/4"
+                    },
+                    "target": {
+                      "componentId": 10699922,
+                      "parameterPath": "motionSpeed",
+                      "path": "/pattern/3/motionSpeed"
+                    },
+                    "id": 10699942,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.3040610310563352
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699939,
+                      "path": "/modulation/modulator/4"
+                    },
+                    "target": {
+                      "componentId": 10699922,
+                      "parameterPath": "scale",
+                      "path": "/pattern/3/scale"
+                    },
+                    "id": 10699943,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.381015617705998
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699959,
+                      "path": "/modulation/modulator/5"
+                    },
+                    "target": {
+                      "componentId": 10699944,
+                      "parameterPath": "compositeLevel",
+                      "path": "/pattern/4/compositeLevel"
+                    },
+                    "id": 10699960,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 1.0
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699959,
+                      "path": "/modulation/modulator/5"
+                    },
+                    "target": {
+                      "componentId": 10699944,
+                      "parameterPath": "range",
+                      "path": "/pattern/4/range"
+                    },
+                    "id": 10699961,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.22343749925494194
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699959,
+                      "path": "/modulation/modulator/5"
+                    },
+                    "target": {
+                      "componentId": 10699944,
+                      "parameterPath": "minMax",
+                      "path": "/pattern/4/minMax"
+                    },
+                    "id": 10699966,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.9416015651077032
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699959,
+                      "path": "/modulation/modulator/5"
+                    },
+                    "target": {
+                      "componentId": 10699944,
+                      "parameterPath": "sharp",
+                      "path": "/pattern/4/sharp"
+                    },
+                    "id": 10699967,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": -0.5970703084021807
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699919,
+                      "path": "/modulation/modulator/3"
+                    },
+                    "target": {
+                      "componentId": 10699897,
+                      "parameterPath": "shapeLerp",
+                      "path": "/pattern/2/shapeLerp"
+                    },
+                    "id": 10699968,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": -0.5134225399233401
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699985,
+                      "path": "/modulation/modulator/6"
+                    },
+                    "target": {
+                      "componentId": 10699972,
+                      "parameterPath": "compositeLevel",
+                      "path": "/pattern/5/compositeLevel"
+                    },
+                    "id": 10699986,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 1.0
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699985,
+                      "path": "/modulation/modulator/6"
+                    },
+                    "target": {
+                      "componentId": 10699972,
+                      "parameterPath": "maxSpeed",
+                      "path": "/pattern/5/maxSpeed"
+                    },
+                    "id": 10699987,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 1.0
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699985,
+                      "path": "/modulation/modulator/6"
+                    },
+                    "target": {
+                      "componentId": 10699972,
+                      "parameterPath": "maxLength",
+                      "path": "/pattern/5/maxLength"
+                    },
+                    "id": 10699988,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.1765624960025889
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10699985,
+                      "path": "/modulation/modulator/6"
+                    },
+                    "target": {
+                      "componentId": 10699990,
+                      "parameterPath": "level",
+                      "path": "/pattern/5/effect/1/level"
+                    },
+                    "id": 10699993,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.7990234367316589
+                    },
+                    "children": {}
+                  },
+                  {
+                    "source": {
+                      "id": 10690417,
+                      "path": "/modulation/modulator/1"
+                    },
+                    "target": {
+                      "componentId": 10690371,
+                      "parameterPath": "stripes",
+                      "path": "/pattern/1/stripes"
+                    },
+                    "id": 10700002,
+                    "class": "heronarts.lx.modulation.LXCompoundModulation",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "LX",
+                      "enabled": true,
+                      "polarity": 0,
+                      "polarity/name": "UNIPOLAR",
+                      "range": 0.21453125348489266
+                    },
+                    "children": {}
                   }
                 ],
                 "triggers": []
@@ -7486,9 +8342,9 @@
                   "colorMode/name": "FIXED",
                   "blendMode": 0,
                   "blendMode/name": "RGB",
-                  "gradient": 0.050464525644201785,
+                  "gradient": -0.36233108438318595,
                   "fixedColor/brightness": 100.0,
-                  "fixedColor/saturation": 46.36393356323242,
+                  "fixedColor/saturation": 73.63932800292969,
                   "fixedColor/hue": 0.0,
                   "xMode": 0,
                   "xMode/name": "NORMAL",
@@ -7498,8 +8354,8 @@
                   "zMode/name": "NORMAL",
                   "paletteIndex": 1,
                   "paletteStops": 5,
-                  "gradientRange": 360.0,
-                  "saturationRange": 0.0,
+                  "gradientRange": 60.0,
+                  "saturationRange": 88.1171876040753,
                   "brightnessRange": 0.0,
                   "gradientClamp": 0,
                   "gradientClamp/name": "CLAMP",
@@ -7516,6 +8372,57 @@
                 "children": {
                   "modulation": {
                     "id": 10690736,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1
+              },
+              {
+                "id": 10699894,
+                "class": "heronarts.lx.effect.color.TransparifyEffect",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Transparify",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "locked": false,
+                  "threshold": 0.25,
+                  "feather": 1.0,
+                  "amount": 1.0,
+                  "source": 0,
+                  "source/name": "BRIGHTNESS"
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10699895,
                     "class": "heronarts.lx.modulation.LXModulationEngine",
                     "internal": {
                       "modulationColor": 0,
@@ -7576,7 +8483,7 @@
                   "xAmt": -0.5804687450581696,
                   "yAmt": 1.0,
                   "zAmt": 0.44687499932479113,
-                  "stripes": 4.509429983781581,
+                  "stripes": 4.0,
                   "sharp": 4.380000412477368,
                   "speedUnipolar": 100.0,
                   "speedBipolar": 15.031250123865902,
@@ -7588,7 +8495,7 @@
                   "reverse": false,
                   "invert": 0.0,
                   "level": 1.0,
-                  "rotate": false,
+                  "rotate": true,
                   "yaw": 0.0,
                   "pitch": 0.0,
                   "roll": 0.0,
@@ -7607,8 +8514,133 @@
                       "label": "Modulation"
                     },
                     "children": {},
-                    "modulators": [],
-                    "modulations": [],
+                    "modulators": [
+                      {
+                        "id": 10699917,
+                        "class": "heronarts.lx.modulator.CycleModulator",
+                        "internal": {
+                          "modulationColor": 1,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Cycle",
+                          "running": true,
+                          "trigger": false,
+                          "reset": false,
+                          "midiSource/index": 0,
+                          "midiFilter/enabled": true,
+                          "midiFilter/channel": 16,
+                          "midiFilter/channel/name": "OMNI",
+                          "midiFilter/minNote": 0,
+                          "midiFilter/noteRange": 128,
+                          "midiFilter/minVelocity": 1,
+                          "midiFilter/velocityRange": 127,
+                          "speedUnipolar": 0.4016406227601692,
+                          "speedBipolar": 1.0,
+                          "speedRangeHz": 0.2,
+                          "speedPolarity": 0,
+                          "speedPolarity/name": "UNIPOLAR"
+                        },
+                        "children": {}
+                      },
+                      {
+                        "id": 10700003,
+                        "class": "heronarts.lx.modulator.VariableLFO",
+                        "internal": {
+                          "modulationColor": 3,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LFO",
+                          "running": true,
+                          "trigger": false,
+                          "reset": false,
+                          "midiSource/index": 0,
+                          "midiFilter/enabled": true,
+                          "midiFilter/channel": 16,
+                          "midiFilter/channel/name": "OMNI",
+                          "midiFilter/minNote": 0,
+                          "midiFilter/noteRange": 128,
+                          "midiFilter/minVelocity": 1,
+                          "midiFilter/velocityRange": 127,
+                          "loop": true,
+                          "tempoSync": false,
+                          "tempoMultiplier": 4,
+                          "tempoMultiplier/name": "QUARTER",
+                          "tempoLock": true,
+                          "manualBasis": false,
+                          "basisIn": 0.0,
+                          "clockMode": 0,
+                          "clockMode/name": "FAST",
+                          "periodFast": 15204.037770019573,
+                          "periodSlow": 10000.0,
+                          "wave": 0,
+                          "skew": 0.0,
+                          "shape": 0.0,
+                          "bias": 0.0,
+                          "phase": 0.0,
+                          "exp": 0.0
+                        },
+                        "children": {},
+                        "basis": 0.6770495866593177
+                      }
+                    ],
+                    "modulations": [
+                      {
+                        "source": {
+                          "id": 10699917,
+                          "path": "/modulation/modulator/1"
+                        },
+                        "target": {
+                          "componentId": 10690371,
+                          "parameterPath": "yaw",
+                          "path": "/yaw"
+                        },
+                        "id": 10699918,
+                        "class": "heronarts.lx.modulation.LXCompoundModulation",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LX",
+                          "enabled": true,
+                          "polarity": 0,
+                          "polarity/name": "UNIPOLAR",
+                          "range": 1.0
+                        },
+                        "children": {}
+                      },
+                      {
+                        "source": {
+                          "id": 10700003,
+                          "path": "/modulation/modulator/2"
+                        },
+                        "target": {
+                          "componentId": 10690371,
+                          "parameterPath": "pitch",
+                          "path": "/pitch"
+                        },
+                        "id": 10700004,
+                        "class": "heronarts.lx.modulation.LXCompoundModulation",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LX",
+                          "enabled": true,
+                          "polarity": 0,
+                          "polarity/name": "UNIPOLAR",
+                          "range": 0.1310546868480742
+                        },
+                        "children": {}
+                      }
+                    ],
                     "triggers": []
                   }
                 },
@@ -7639,7 +8671,7 @@
                       "viewPriority": 0,
                       "enabled": true,
                       "locked": false,
-                      "offset": 1.0,
+                      "offset": 0.5,
                       "size": 0.0,
                       "fade": 0.25,
                       "invert": false,
@@ -7660,6 +8692,529 @@
                     "children": {
                       "modulation": {
                         "id": 10690385,
+                        "class": "heronarts.lx.modulation.LXModulationEngine",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Modulation"
+                        },
+                        "children": {},
+                        "modulators": [],
+                        "modulations": [],
+                        "triggers": []
+                      }
+                    },
+                    "deviceVersion": -1
+                  }
+                ]
+              },
+              {
+                "id": 10699897,
+                "class": "heronarts.lx.pattern.form.OrboxPattern",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Orbox",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 0.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": true,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "shape1": 1,
+                  "shape1/name": "BOX",
+                  "shape2": 2,
+                  "shape2/name": "ORB",
+                  "shapeLerp": 1.0,
+                  "fill": 0.0,
+                  "x": 0.5,
+                  "y": 0.5,
+                  "z": 0.5,
+                  "xAmt": 1.0,
+                  "yAmt": 1.0,
+                  "zAmt": 1.0,
+                  "yaw": 0.0,
+                  "pitch": 0.0,
+                  "roll": 0.0,
+                  "shearX": 0.0,
+                  "shearY": 0.0,
+                  "shearZ": 0.0,
+                  "radius": 1.5774999866262078,
+                  "width": 0.08675497150200673,
+                  "fade": 0.10051718593906209,
+                  "invert": 0.0,
+                  "level": 1.0,
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10699898,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": [
+                  {
+                    "id": 10699914,
+                    "class": "heronarts.lx.effect.SparkleEffect",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true,
+                      "expanded": true,
+                      "expandedCue": true,
+                      "expandedAux": true,
+                      "modulationExpanded": false
+                    },
+                    "parameters": {
+                      "label": "Sparkle",
+                      "midiFilter/enabled": true,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "view": 0,
+                      "viewPriority": 0,
+                      "enabled": true,
+                      "locked": false,
+                      "amount": 0.14304687385447323,
+                      "density": 45.02584780904652,
+                      "speed": 0.77762276888825,
+                      "variation": 25.0,
+                      "duration": 100.0,
+                      "sharp": 0.0,
+                      "waveshape": 0,
+                      "minInterval": 0.30454485575469203,
+                      "maxInterval": 0.2636194943060939,
+                      "minLevel": 75.0,
+                      "maxLevel": 100.0,
+                      "maskMode": 0,
+                      "maskMode/name": "MULTIPLY"
+                    },
+                    "children": {
+                      "modulation": {
+                        "id": 10699915,
+                        "class": "heronarts.lx.modulation.LXModulationEngine",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Modulation"
+                        },
+                        "children": {},
+                        "modulators": [],
+                        "modulations": [],
+                        "triggers": []
+                      }
+                    },
+                    "deviceVersion": -1
+                  }
+                ]
+              },
+              {
+                "id": 10699922,
+                "class": "heronarts.lx.pattern.texture.NoisePattern",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Noise",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 0.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": true,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "midpoint": 74.78515652474016,
+                  "contrast": 271.0512444023315,
+                  "minLevel": 0.0,
+                  "maxLevel": 100.0,
+                  "invert": 0.0,
+                  "xOffset": 0.0,
+                  "yOffset": 0.0,
+                  "zOffset": 0.0,
+                  "scale": 0.15542967966757715,
+                  "minScale": 1.0,
+                  "maxScale": 10.0,
+                  "xScale": 1.0,
+                  "yScale": 1.0,
+                  "zScale": 1.0,
+                  "motion": true,
+                  "motionSpeed": 0.16502063418738544,
+                  "motionSpeedRange": 128.0,
+                  "xMotion": 0.0,
+                  "yMotion": 0.0,
+                  "zMotion": 1.0,
+                  "algorithm": 0,
+                  "algorithm/name": "PERLIN",
+                  "seed": 0,
+                  "octaves": 3,
+                  "lacunarity": 2.0,
+                  "gain": 0.5,
+                  "ridgeOffset": 0.9,
+                  "xMode": 1,
+                  "xMode/name": "CENTER",
+                  "yMode": 1,
+                  "yMode/name": "CENTER",
+                  "zMode": 1,
+                  "zMode/name": "CENTER",
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10699923,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": []
+              },
+              {
+                "id": 10699944,
+                "class": "apotheneum.mcslee.Portals",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Portals",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 0.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": true,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "minMax": 0.0,
+                  "distance": 0.0,
+                  "range": 2.3819530434848275,
+                  "sharp": 0.7653906205669045,
+                  "contrast": 2.0905468774726614,
+                  "yRatio": 1.200820310798008,
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10699945,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [
+                      {
+                        "id": 10699957,
+                        "class": "heronarts.lx.modulator.CycleModulator",
+                        "internal": {
+                          "modulationColor": 2,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Cycle",
+                          "running": true,
+                          "trigger": false,
+                          "reset": false,
+                          "midiSource/index": 0,
+                          "midiFilter/enabled": true,
+                          "midiFilter/channel": 16,
+                          "midiFilter/channel/name": "OMNI",
+                          "midiFilter/minNote": 0,
+                          "midiFilter/noteRange": 128,
+                          "midiFilter/minVelocity": 1,
+                          "midiFilter/velocityRange": 127,
+                          "speedUnipolar": 1.0,
+                          "speedBipolar": 1.0,
+                          "speedRangeHz": 2.5476562618277967,
+                          "speedPolarity": 0,
+                          "speedPolarity/name": "UNIPOLAR"
+                        },
+                        "children": {}
+                      }
+                    ],
+                    "modulations": [
+                      {
+                        "source": {
+                          "id": 10699957,
+                          "path": "/modulation/modulator/1"
+                        },
+                        "target": {
+                          "componentId": 10699944,
+                          "parameterPath": "distance",
+                          "path": "/distance"
+                        },
+                        "id": 10699958,
+                        "class": "heronarts.lx.modulation.LXCompoundModulation",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "LX",
+                          "enabled": true,
+                          "polarity": 0,
+                          "polarity/name": "UNIPOLAR",
+                          "range": 1.0
+                        },
+                        "children": {}
+                      }
+                    ],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": [
+                  {
+                    "id": 10699963,
+                    "class": "heronarts.lx.effect.DynamicsEffect",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true,
+                      "expanded": false,
+                      "expandedCue": true,
+                      "expandedAux": true,
+                      "modulationExpanded": false
+                    },
+                    "parameters": {
+                      "label": "Dynamics",
+                      "midiFilter/enabled": true,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "view": 0,
+                      "viewPriority": 0,
+                      "enabled": true,
+                      "locked": false,
+                      "ceiling": 1.0,
+                      "contrast": 0.0,
+                      "gain": 1.0,
+                      "floor": 0.06160156277474016,
+                      "gate": 0.0,
+                      "shape": 0.0,
+                      "red": 1.0,
+                      "green": 1.0,
+                      "blue": 1.0
+                    },
+                    "children": {
+                      "modulation": {
+                        "id": 10699964,
+                        "class": "heronarts.lx.modulation.LXModulationEngine",
+                        "internal": {
+                          "modulationColor": 0,
+                          "modulationControlsExpanded": true,
+                          "modulationsExpanded": true
+                        },
+                        "parameters": {
+                          "label": "Modulation"
+                        },
+                        "children": {},
+                        "modulators": [],
+                        "modulations": [],
+                        "triggers": []
+                      }
+                    },
+                    "deviceVersion": -1
+                  }
+                ]
+              },
+              {
+                "id": 10699972,
+                "class": "apotheneum.mcslee.Quilt",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Quilt",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "recall": false,
+                  "launch": false,
+                  "compositeBlend": 0,
+                  "compositeLevel": 0.0,
+                  "hasCustomCycleTime": false,
+                  "customCycleTimeSecs": 60.0,
+                  "autoMute": true,
+                  "cueActive": false,
+                  "auxActive": false,
+                  "minLength": 4.776445350376889,
+                  "maxLength": 1.0,
+                  "biasLength": 0.9615234417578904,
+                  "minSpeed": 0.10960937442723662,
+                  "maxSpeed": 0.0,
+                  "biasSpeed": 1.0,
+                  "hColor/brightness": 100.0,
+                  "hColor/saturation": 0.0,
+                  "hColor/hue": 0.0,
+                  "vColor/brightness": 100.0,
+                  "vColor/saturation": 0.0,
+                  "vColor/hue": 0.0,
+                  "compositeMode": 0
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10699973,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1,
+                "effects": [
+                  {
+                    "id": 10699990,
+                    "class": "heronarts.lx.effect.BlurEffect",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true,
+                      "expanded": true,
+                      "expandedCue": true,
+                      "expandedAux": true,
+                      "modulationExpanded": false
+                    },
+                    "parameters": {
+                      "label": "Blur",
+                      "midiFilter/enabled": true,
+                      "midiFilter/channel": 16,
+                      "midiFilter/channel/name": "OMNI",
+                      "midiFilter/minNote": 0,
+                      "midiFilter/noteRange": 128,
+                      "midiFilter/minVelocity": 1,
+                      "midiFilter/velocityRange": 127,
+                      "view": 0,
+                      "viewPriority": 0,
+                      "enabled": true,
+                      "locked": false,
+                      "level": 0.0,
+                      "decay": 0.33684860608164746,
+                      "decayFactor": 0.2740015618177131,
+                      "mode": 1,
+                      "mode/name": "ADD"
+                    },
+                    "children": {
+                      "modulation": {
+                        "id": 10699991,
                         "class": "heronarts.lx.modulation.LXModulationEngine",
                         "internal": {
                           "modulationColor": 0,
@@ -7775,11 +9330,11 @@
               "activeStep-3": false,
               "activeStep-4": false,
               "activeStep-5": false,
-              "activeStep-6": false,
+              "activeStep-6": true,
               "activeStep-7": false,
               "activeStep-8": false,
               "activeStep-9": false,
-              "activeStep-10": true,
+              "activeStep-10": false,
               "activeStep-11": false,
               "activeStep-12": false,
               "activeStep-13": false,
@@ -7804,7 +9359,7 @@
               "step-16": false
             },
             "children": {},
-            "basis": 0.3475353279999822
+            "basis": 0.6135086560000274
           },
           {
             "id": 10689798,
@@ -7844,11 +9399,11 @@
               "activeStep-3": false,
               "activeStep-4": false,
               "activeStep-5": false,
-              "activeStep-6": false,
+              "activeStep-6": true,
               "activeStep-7": false,
               "activeStep-8": false,
               "activeStep-9": false,
-              "activeStep-10": true,
+              "activeStep-10": false,
               "activeStep-11": false,
               "activeStep-12": false,
               "activeStep-13": false,
@@ -7873,7 +9428,7 @@
               "step-16": false
             },
             "children": {},
-            "basis": 0.3475353279999822
+            "basis": 0.6135086560000274
           },
           {
             "id": 10699535,
@@ -8310,7 +9865,7 @@
             "class": "heronarts.lx.modulator.MidiNoteTrigger",
             "internal": {
               "modulationColor": 7,
-              "modulationControlsExpanded": true,
+              "modulationControlsExpanded": false,
               "modulationsExpanded": true
             },
             "parameters": {
@@ -8339,11 +9894,11 @@
             "class": "heronarts.lx.modulator.MultiTrig",
             "internal": {
               "modulationColor": 0,
-              "modulationControlsExpanded": true,
+              "modulationControlsExpanded": false,
               "modulationsExpanded": true
             },
             "parameters": {
-              "label": "Drop",
+              "label": "Drop-Trig",
               "running": true,
               "trigger": false,
               "reset": false,
@@ -8358,8 +9913,8 @@
               "triggerIn": false,
               "inputChance": 1.0,
               "numOutputs": 5,
-              "mode": 0,
-              "mode/name": "ALL",
+              "mode": 2,
+              "mode/name": "CYCLE",
               "out1": false,
               "out2": false,
               "out3": false,
@@ -8370,6 +9925,50 @@
               "chance3": 1.0,
               "chance4": 1.0,
               "chance5": 1.0
+            },
+            "children": {}
+          },
+          {
+            "id": 10699891,
+            "class": "heronarts.lx.modulator.MultiModeEnvelope",
+            "internal": {
+              "modulationColor": 1,
+              "modulationControlsExpanded": false,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "Drop-Env",
+              "running": true,
+              "trigger": false,
+              "reset": false,
+              "midiSource/index": 0,
+              "midiFilter/enabled": false,
+              "midiFilter/channel": 16,
+              "midiFilter/channel/name": "OMNI",
+              "midiFilter/minNote": 0,
+              "midiFilter/noteRange": 128,
+              "midiFilter/minVelocity": 1,
+              "midiFilter/velocityRange": 127,
+              "engage": false,
+              "retrig": false,
+              "stageMode": 2,
+              "stageMode/name": "AHD",
+              "resetMode": false,
+              "oneshot": true,
+              "initial": 0.0,
+              "peak": 1.0,
+              "delay": 0.0,
+              "attack": 250.0,
+              "hold": 2000.0,
+              "decay": 3000.0,
+              "sustain": 1.0,
+              "release": 1000.0,
+              "shape": 0.0,
+              "manualTrigger": false,
+              "targetTrigger": false,
+              "midiVelocityResponse": 25.0,
+              "midiNoteResponse": 0.0,
+              "midiLegato": false
             },
             "children": {}
           }
@@ -11803,6 +13402,221 @@
               "range": 0.4990699402987957
             },
             "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "knob-1-2",
+              "path": "/midi/template/1/knob-1-2"
+            },
+            "target": {
+              "componentId": 10698879,
+              "parameterPath": "minMax",
+              "path": "/mixer/channel/1/pattern/6/minMax"
+            },
+            "id": 10699837,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": -0.9911718708463013
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "knob-1-3",
+              "path": "/midi/template/1/knob-1-3"
+            },
+            "target": {
+              "componentId": 10698879,
+              "parameterPath": "yRatio",
+              "path": "/mixer/channel/1/pattern/6/yRatio"
+            },
+            "id": 10699838,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 1.0
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "fader-4",
+              "path": "/midi/template/1/fader-4"
+            },
+            "target": {
+              "componentId": 10699852,
+              "parameterPath": "speedUnipolar",
+              "path": "/mixer/channel/4/pattern/5/modulation/modulator/1/speedUnipolar"
+            },
+            "id": 10699858,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 0.5605078162625432
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "knob-4-1",
+              "path": "/midi/template/1/knob-4-1"
+            },
+            "target": {
+              "componentId": 10699839,
+              "parameterPath": "width",
+              "path": "/mixer/channel/4/pattern/5/width"
+            },
+            "id": 10699859,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 0.42769531160593033
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "knob-4-3",
+              "path": "/midi/template/1/knob-4-3"
+            },
+            "target": {
+              "componentId": 10699839,
+              "parameterPath": "invert",
+              "path": "/mixer/channel/4/pattern/5/invert"
+            },
+            "id": 10699860,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 1.0
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "fader-4",
+              "path": "/midi/template/1/fader-4"
+            },
+            "target": {
+              "componentId": 10699854,
+              "parameterPath": "speedUnipolar",
+              "path": "/mixer/channel/4/pattern/5/modulation/modulator/2/speedUnipolar"
+            },
+            "id": 10699861,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 0.4399218726612162
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10692152,
+              "parameterPath": "knob-4-2",
+              "path": "/midi/template/1/knob-4-2"
+            },
+            "target": {
+              "componentId": 10699839,
+              "parameterPath": "shapeLerp",
+              "path": "/mixer/channel/4/pattern/5/shapeLerp"
+            },
+            "id": 10699863,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 1.0
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "id": 10699891,
+              "path": "/modulation/modulator/17"
+            },
+            "target": {
+              "componentId": 10689606,
+              "parameterPath": "fader",
+              "path": "/mixer/channel/8/fader"
+            },
+            "id": 10699892,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 1.0
+            },
+            "children": {}
           }
         ],
         "triggers": [
@@ -12315,6 +14129,216 @@
               "toggleMomentaryMode/name": "ON"
             },
             "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "out1",
+              "path": "/modulation/modulator/16/out1"
+            },
+            "target": {
+              "componentId": 10690417,
+              "parameterPath": "targetTrigger",
+              "path": "/mixer/channel/8/modulation/modulator/1/targetTrigger"
+            },
+            "id": 10699890,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "triggerIn",
+              "path": "/modulation/modulator/16/triggerIn"
+            },
+            "target": {
+              "componentId": 10699891,
+              "parameterPath": "targetTrigger",
+              "path": "/modulation/modulator/17/targetTrigger"
+            },
+            "id": 10699893,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "out2",
+              "path": "/modulation/modulator/16/out2"
+            },
+            "target": {
+              "componentId": 10699910,
+              "parameterPath": "targetTrigger",
+              "path": "/mixer/channel/8/modulation/modulator/2/targetTrigger"
+            },
+            "id": 10699912,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "out2",
+              "path": "/modulation/modulator/16/out2"
+            },
+            "target": {
+              "componentId": 10699919,
+              "parameterPath": "targetTrigger",
+              "path": "/mixer/channel/8/modulation/modulator/3/targetTrigger"
+            },
+            "id": 10699920,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "out3",
+              "path": "/modulation/modulator/16/out3"
+            },
+            "target": {
+              "componentId": 10699939,
+              "parameterPath": "targetTrigger",
+              "path": "/mixer/channel/8/modulation/modulator/4/targetTrigger"
+            },
+            "id": 10699941,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "out4",
+              "path": "/modulation/modulator/16/out4"
+            },
+            "target": {
+              "componentId": 10699959,
+              "parameterPath": "targetTrigger",
+              "path": "/mixer/channel/8/modulation/modulator/5/targetTrigger"
+            },
+            "id": 10699962,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "componentId": 10694383,
+              "parameterPath": "out5",
+              "path": "/modulation/modulator/16/out5"
+            },
+            "target": {
+              "componentId": 10699985,
+              "parameterPath": "targetTrigger",
+              "path": "/mixer/channel/8/modulation/modulator/6/targetTrigger"
+            },
+            "id": 10699989,
+            "class": "heronarts.lx.modulation.LXTriggerModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "toggleMode": 0,
+              "toggleMode/name": "DIRECT",
+              "momentaryToggleMode": 0,
+              "momentaryToggleMode/name": "TOGGLE",
+              "toggleMomentaryMode": 0,
+              "toggleMomentaryMode/name": "ON"
+            },
+            "children": {}
           }
         ]
       },
@@ -12430,7 +14454,7 @@
               "knob-3-3": 0.0,
               "knob-4-1": 0.0,
               "knob-4-2": 0.0,
-              "knob-4-3": 1.0,
+              "knob-4-3": 0.0,
               "knob-5-1": 0.0,
               "knob-5-2": 0.0,
               "knob-5-3": 0.0,
@@ -12507,8 +14531,8 @@
               "pad-A14": false,
               "pad-A15": false,
               "pad-A16": false,
-              "knob-A1": 0.9888281249441206,
-              "knob-A2": 1.0,
+              "knob-A1": 0.011640625074505806,
+              "knob-A2": 0.0,
               "knob-A3": 0.0,
               "knob-A4": 0.0,
               "knob-A5": 0.0,
@@ -12590,8 +14614,8 @@
   },
   "externals": {
     "ui": {
-      "leftPaneActiveSection": 1,
-      "audioExpanded": true,
+      "leftPaneActiveSection": 2,
+      "audioExpanded": false,
       "envelopExpanded": true,
       "reaperExpanded": true,
       "paletteExpanded": true,
@@ -12599,7 +14623,7 @@
       "mixerCentered": false,
       "fixtureInspectorExpanded": false,
       "viewsExpanded": false,
-      "soundStageExpanded": true,
+      "soundStageExpanded": false,
       "preview": {
         "projection": 0,
         "projection/name": "PERSPECTIVE",
@@ -12615,9 +14639,9 @@
         "animation": false,
         "camera": {
           "active": true,
-          "radius": 705.1155854448073,
-          "theta": 354.5596525355133,
-          "phi": 4.290639983105894,
+          "radius": 912.3995382247751,
+          "theta": 28.921756871662353,
+          "phi": 1.9894502217298822,
           "x": 275.8415490309708,
           "y": 245.90844701603055,
           "z": 260.0573686197167
@@ -12734,7 +14758,7 @@
           "neg2": false
         },
         "axes": {
-          "visible": true
+          "visible": false
         }
       },
       "previewAux": {
