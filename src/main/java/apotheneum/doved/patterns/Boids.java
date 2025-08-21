@@ -540,9 +540,9 @@ public class Boids extends ApotheneumPattern implements UIDeviceControls<Boids> 
     float blurAmount = blur.getValuef();
 
     // Debug: Print blur value occasionally
-    if ((int)(currentTime / 1000) % 5 == 0 && (int)(currentTime % 1000) < 50) {
-      System.out.println("Blur amount: " + blurAmount);
-    }
+//    if ((int)(currentTime / 1000) % 5 == 0 && (int)(currentTime % 1000) < 50) {
+//      System.out.println("Blur amount: " + blurAmount);
+//    }
 
     if (blurAmount > 0.01f) {
       // Apply decay to create motion blur
@@ -550,9 +550,9 @@ public class Boids extends ApotheneumPattern implements UIDeviceControls<Boids> 
         int oldColor = colors[i];
         colors[i] = LXColor.scaleBrightness(colors[i], blurAmount);
         // Debug: Check if scaling is working on first few pixels
-        if (i < 3 && oldColor != colors[i] && oldColor != LXColor.BLACK) {
-          // System.out.println("Pixel " + i + " scaled from " + Integer.toHexString(oldColor) + " to " + Integer.toHexString(colors[i]));
-        }
+//        if (i < 3 && oldColor != colors[i] && oldColor != LXColor.BLACK) {
+//          System.out.println("Pixel " + i + " scaled from " + Integer.toHexString(oldColor) + " to " + Integer.toHexString(colors[i]));
+//        }
       }
     } else {
       // No blur - clear the frame completely
