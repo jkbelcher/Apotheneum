@@ -76,6 +76,19 @@ public class ApotheneumLauncherPlugin implements LXPlugin, LXOscListener {
           log("Quitting Ableton live");
           launchScript(home, "QuitLive.scpt", null);
         }).start();
+      } else if (message.matches("/apotheneum/openBitwigProject")) {
+        final String home = System.getProperty("user.home");
+        final String liveProject = home + "/" + message.getString();
+        new Thread(() -> {
+          log("Launching Bitwig project: " + liveProject);
+          launchScript(home, "OpenBitwigProject.scpt", liveProject);
+        }).start();
+      } else if (message.matches("/apotheneum/quitBitwig")) {
+        final String home = System.getProperty("user.home");
+        new Thread(() -> {
+          log("Quitting Bitwig");
+          launchScript(home, "QuitBitwig.scpt", null);
+        }).start();
       }
     } catch (Exception x) {
       error(x, "Error on Apotheneum OSC handler: " + x.getMessage());
