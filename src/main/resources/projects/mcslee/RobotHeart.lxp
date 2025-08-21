@@ -1,6 +1,6 @@
 {
   "version": "1.1.1-SNAPSHOT",
-  "timestamp": 1755715324304,
+  "timestamp": 1755717434389,
   "model": {
     "id": 2,
     "class": "heronarts.lx.structure.LXStructure",
@@ -2830,11 +2830,11 @@
           "timeBaseDefault": 1,
           "timeBaseDefault/name": "TEMPO",
           "clipSnapshotDefault": false,
-          "gridMode": 1,
-          "gridMode/name": "CLIPS",
+          "gridMode": 0,
+          "gridMode/name": "PATTERNS",
           "gridViewOffset": 0,
           "gridPatternOffset": 0,
-          "gridViewExpanded": false,
+          "gridViewExpanded": true,
           "clipInspectorExpanded": false,
           "scene-1": false,
           "pattern-1": false,
@@ -3634,7 +3634,7 @@
             },
             "effects": [],
             "clips": [],
-            "patternIndex": 5,
+            "patternIndex": 2,
             "patterns": [
               {
                 "id": 10689933,
@@ -8390,6 +8390,65 @@
                 "deviceVersion": -1
               },
               {
+                "id": 10701909,
+                "class": "heronarts.lx.effect.SparkleEffect",
+                "internal": {
+                  "modulationColor": 0,
+                  "modulationControlsExpanded": true,
+                  "modulationsExpanded": true,
+                  "expanded": true,
+                  "expandedCue": true,
+                  "expandedAux": true,
+                  "modulationExpanded": false
+                },
+                "parameters": {
+                  "label": "Sparkle",
+                  "midiFilter/enabled": true,
+                  "midiFilter/channel": 16,
+                  "midiFilter/channel/name": "OMNI",
+                  "midiFilter/minNote": 0,
+                  "midiFilter/noteRange": 128,
+                  "midiFilter/minVelocity": 1,
+                  "midiFilter/velocityRange": 127,
+                  "view": 0,
+                  "viewPriority": 0,
+                  "enabled": true,
+                  "locked": false,
+                  "amount": 0.0,
+                  "density": 20.263830919546976,
+                  "speed": 0.15987723297439516,
+                  "variation": 51.26171875745058,
+                  "duration": 100.0,
+                  "sharp": 0.0,
+                  "waveshape": 0,
+                  "minInterval": 0.5,
+                  "maxInterval": 4.0,
+                  "minLevel": 75.0,
+                  "maxLevel": 100.0,
+                  "maskMode": 2,
+                  "maskMode/name": "SPOTLIGHT"
+                },
+                "children": {
+                  "modulation": {
+                    "id": 10701910,
+                    "class": "heronarts.lx.modulation.LXModulationEngine",
+                    "internal": {
+                      "modulationColor": 0,
+                      "modulationControlsExpanded": true,
+                      "modulationsExpanded": true
+                    },
+                    "parameters": {
+                      "label": "Modulation"
+                    },
+                    "children": {},
+                    "modulators": [],
+                    "modulations": [],
+                    "triggers": []
+                  }
+                },
+                "deviceVersion": -1
+              },
+              {
                 "id": 10699894,
                 "class": "heronarts.lx.effect.color.TransparifyEffect",
                 "internal": {
@@ -8584,7 +8643,7 @@
                           "exp": 0.0
                         },
                         "children": {},
-                        "basis": 0.6770495866593177
+                        "basis": 0.47502082137457985
                       }
                     ],
                     "modulations": [
@@ -9359,7 +9418,7 @@
               "step-16": false
             },
             "children": {},
-            "basis": 0.6135086560000274
+            "basis": 0.21492100000000147
           },
           {
             "id": 10689798,
@@ -9428,7 +9487,7 @@
               "step-16": false
             },
             "children": {},
-            "basis": 0.6135086560000274
+            "basis": 0.21492100000000147
           },
           {
             "id": 10699535,
@@ -9894,7 +9953,7 @@
             "class": "heronarts.lx.modulator.MultiTrig",
             "internal": {
               "modulationColor": 0,
-              "modulationControlsExpanded": false,
+              "modulationControlsExpanded": true,
               "modulationsExpanded": true
             },
             "parameters": {
@@ -13617,6 +13676,58 @@
               "range": 1.0
             },
             "children": {}
+          },
+          {
+            "source": {
+              "id": 10699891,
+              "path": "/modulation/modulator/17"
+            },
+            "target": {
+              "componentId": 10701909,
+              "parameterPath": "amount",
+              "path": "/mixer/channel/8/effect/2/amount"
+            },
+            "id": 10701912,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 0.4661718682618812
+            },
+            "children": {}
+          },
+          {
+            "source": {
+              "id": 10699891,
+              "path": "/modulation/modulator/17"
+            },
+            "target": {
+              "componentId": 10701909,
+              "parameterPath": "speed",
+              "path": "/mixer/channel/8/effect/2/speed"
+            },
+            "id": 10701913,
+            "class": "heronarts.lx.modulation.LXCompoundModulation",
+            "internal": {
+              "modulationColor": 0,
+              "modulationControlsExpanded": true,
+              "modulationsExpanded": true
+            },
+            "parameters": {
+              "label": "LX",
+              "enabled": true,
+              "polarity": 0,
+              "polarity/name": "UNIPOLAR",
+              "range": 0.7480468801222742
+            },
+            "children": {}
           }
         ],
         "triggers": [
@@ -14639,7 +14750,7 @@
         "animation": false,
         "camera": {
           "active": true,
-          "radius": 912.3995382247751,
+          "radius": 1049.0138068360075,
           "theta": 28.921756871662353,
           "phi": 1.9894502217298822,
           "x": 275.8415490309708,
