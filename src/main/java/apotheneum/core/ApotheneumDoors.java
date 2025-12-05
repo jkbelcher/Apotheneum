@@ -81,7 +81,7 @@ public class ApotheneumDoors extends ApotheneumEffect {
       muteGlitch(interiorStart+8*panelSize);
     }
     if (this.muteGlitch3.isOn()) {
-      muteGlitch(interiorStart+14*panelSize);
+      muteGlitch(interiorStart+16*panelSize);
     }
   }
 
