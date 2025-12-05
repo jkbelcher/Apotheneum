@@ -53,11 +53,16 @@ public class ApotheneumDoors extends ApotheneumEffect {
     new BooleanParameter("Glitch 2", true)
     .setDescription("Mutes the second cylinder glitch");
 
+  public final BooleanParameter muteGlitch3 =
+    new BooleanParameter("Glitch 3", true)
+    .setDescription("Mutes the third cylinder glitch");
+
   public ApotheneumDoors(LX lx) {
     super(lx);
     addParameter("mute", this.mute);
     addParameter("muteGlitch", this.muteGlitch);
     addParameter("muteGlitch2", this.muteGlitch2);
+    addParameter("muteGlitch3", this.muteGlitch3);
   }
 
   @Override
@@ -65,11 +70,18 @@ public class ApotheneumDoors extends ApotheneumEffect {
     if (this.mute.isOn()) {
       muteDoors();
     }
+
+    final int interiorStart = 45*50*8 + 43*120; // 23160
+    final int panelSize = 43*5; // 215
+
     if (this.muteGlitch.isOn()) {
-      muteGlitch(24020);
+      muteGlitch(interiorStart+4*panelSize);
     }
     if (this.muteGlitch2.isOn()) {
-      muteGlitch(24880);
+      muteGlitch(interiorStart+8*panelSize);
+    }
+    if (this.muteGlitch3.isOn()) {
+      muteGlitch(interiorStart+13*panelSize);
     }
   }
 
