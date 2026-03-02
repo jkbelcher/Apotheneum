@@ -59,7 +59,7 @@ public class UIApotheneumFloorLights extends UI3dComponent {
     super();
     this.auxiliary = auxiliary;
 
-    this.vertices = new VertexBuffer(ui.lx, NUM_VERTICES, VertexDeclaration.ATTRIB_POSITION) {
+    this.vertices = new VertexBuffer(ui.lx, NUM_VERTICES, VertexDeclaration.Attribute.POSITION) {
       @Override
       protected void bufferData(ByteBuffer buffer) {
         final LXMatrix matrix = new LXMatrix();
@@ -82,7 +82,7 @@ public class UIApotheneumFloorLights extends UI3dComponent {
       }
     };
 
-    this.colors = new DynamicVertexBuffer(ui.lx, NUM_VERTICES, VertexDeclaration.ATTRIB_COLOR0);
+    this.colors = new DynamicVertexBuffer(ui.lx, NUM_VERTICES, VertexDeclaration.Attribute.COLOR0);
 
     this.program = new VertexFill(ui.lx) {
       @Override
