@@ -27,8 +27,6 @@ import heronarts.glx.DynamicVertexBuffer;
 import heronarts.glx.VertexBuffer;
 import heronarts.glx.VertexDeclaration;
 import heronarts.glx.View;
-import heronarts.glx.shader.ShaderProgram;
-import heronarts.glx.shader.VertexFill;
 import heronarts.glx.ui.UI;
 import heronarts.glx.ui.UI3dComponent;
 import heronarts.lx.LXEngine;
@@ -48,7 +46,6 @@ public class UIApotheneumFloorLights extends UI3dComponent {
   private static final int NUM_TRIANGLES = 96;
   private static final int NUM_VERTICES = VERTICES_PER_TRIANGLE * NUM_TRIANGLES;
 
-  private final ShaderProgram program;
   private final VertexBuffer vertices;
   private final DynamicVertexBuffer colors;
   private boolean auxiliary;
@@ -83,14 +80,6 @@ public class UIApotheneumFloorLights extends UI3dComponent {
     };
 
     this.colors = new DynamicVertexBuffer(ui.lx, NUM_VERTICES, VertexDeclaration.Attribute.COLOR0);
-
-    this.program = new VertexFill(ui.lx) {
-      @Override
-      protected void setVertexBuffers(View view) {
-        bgfx_set_vertex_buffer(0, vertices.getHandle(), 0, NUM_VERTICES);
-        bgfx_set_dynamic_vertex_buffer(1, colors.getHandle(), 0, NUM_VERTICES);
-      }
-    };
 
     this.gammaLut = new int[256];
     this.gammaLut[0] = 0;
@@ -143,7 +132,7 @@ public class UIApotheneumFloorLights extends UI3dComponent {
       }
       colorData.flip();
       this.colors.update();
-      this.program.submit(view, BGFX_STATE);
+      ui.lx.program.vertexFill.submit(view, BGFX_STATE, this.vertices, this.colors);
     }
   }
 
@@ -151,7 +140,6 @@ public class UIApotheneumFloorLights extends UI3dComponent {
   public void dispose() {
     this.vertices.dispose();
     this.colors.dispose();
-    this.program.dispose();
     super.dispose();
   }
 }
