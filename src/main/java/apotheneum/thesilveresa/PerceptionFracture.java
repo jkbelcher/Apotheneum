@@ -9,15 +9,14 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.BooleanParameter;
 import heronarts.lx.parameter.CompoundParameter;
-import heronarts.lx.parameter.DiscreteParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Perception Fracture")
+@LXComponent.Name("Perception Fracture")
 public class PerceptionFracture extends ApotheneumPattern {
 
   private final CompoundParameter speed = new CompoundParameter("Speed", 0.2, 0.0, 1.0)
@@ -62,9 +61,9 @@ public class PerceptionFracture extends ApotheneumPattern {
   @Override
   protected void render(double deltaMs) {
     timeAccum += speed.getValuef() * (float)(deltaMs / 1000.0);
-    
+
     int geoMode = 2; // Both geometries
-    
+
     // Render cube if enabled
     if (geoMode == 0 || geoMode == 2) {
       Cube cube = Apotheneum.cube;
@@ -79,7 +78,7 @@ public class PerceptionFracture extends ApotheneumPattern {
         }
       }
     }
-    
+
     // Render cylinder if enabled
     if (geoMode == 1 || geoMode == 2) {
       Cylinder cylinder = Apotheneum.cylinder;
@@ -94,22 +93,22 @@ public class PerceptionFracture extends ApotheneumPattern {
     int rows = face.rows.length;
     float invCols = 1.0f / Math.max(1, cols - 1);
     float invRows = 1.0f / Math.max(1, rows - 1);
-    
+
     for (Row row : face.rows) {
       for (int cx = 0; cx < cols; cx++) {
         LXPoint p = row.points[cx];
         float u = cx * invCols - 0.5f;
         float v = row.index * invRows - 0.5f;
-        
+
         float depthValue = calculateDepthIllusion(u, v);
         colors[p.index] = generateDepthColor(depthValue, u, v);
       }
     }
   }
-  
+
   private void processCylinder(Cylinder cylinder) {
     final float stretchFactor = 0.4f;
-    
+
     Cylinder.Orientation[] faces = (cylinder.interior != null)
       ? new Cylinder.Orientation[]{ cylinder.exterior, cylinder.interior }
       : new Cylinder.Orientation[]{ cylinder.exterior };
@@ -145,86 +144,86 @@ public class PerceptionFracture extends ApotheneumPattern {
     float parallaxAmount = parallax.getValuef();
     float perspectiveAmount = perspective.getValuef();
     float fractureAmount = fracture.getValuef();
-    
+
     // Calculate convergence point
     float convergenceStrength = convergence.getValuef();
     float centerU = 0f;
     float centerV = 0f;
     float distFromCenter = (float)Math.sqrt((u - centerU) * (u - centerU) + (v - centerV) * (v - centerV));
-    
+
     // Apply perspective distortion
     float perspectiveScale = 1.0f + perspectiveAmount * distFromCenter;
     float perspU = u * perspectiveScale;
     float perspV = v * perspectiveScale;
-    
+
     float totalDepth = 0f;
     float totalWeight = 0f;
-    
+
     for (int layer = 0; layer < numLayers; layer++) {
       float layerDepth = (float)layer / (numLayers - 1);
       float layerSpeed = 1.0f - layerDepth * 0.5f; // Farther layers move slower
-      
+
       // Calculate parallax offset
       float parallaxU = perspU + layerDepth * parallaxAmount * (float)Math.sin(timeAccum * layerSpeed);
       float parallaxV = perspV + layerDepth * parallaxAmount * (float)Math.cos(timeAccum * layerSpeed);
-      
+
       // Create grid pattern for this layer
       float layerFreq = gridFreq * (1.0f + layerDepth * 0.3f);
       float gridValue = (float)Math.sin(parallaxU * layerFreq * 2 * Math.PI) *
                        (float)Math.sin(parallaxV * layerFreq * 2 * Math.PI);
-      
+
       // Apply fracturing
       float fracturePhase = timeAccum * layerSpeed + layerDepth * (float)Math.PI;
       float fractureValue = (float)Math.sin(fracturePhase) * fractureAmount;
       gridValue *= (1.0f + fractureValue);
-      
+
       // Weight by depth and convergence
       float weight = 1.0f - layerDepth * 0.3f;
       weight *= (1.0f + convergenceStrength * (1.0f - distFromCenter));
-      
+
       totalDepth += gridValue * weight * layerDepth;
       totalWeight += weight;
     }
-    
+
     float depthValue = totalWeight > 0 ? totalDepth / totalWeight : 0f;
-    
+
     // Apply flicker for depth enhancement
     float flickerValue = (float)Math.sin(timeAccum * 8 + u * 10 + v * 7) * flicker.getValuef();
     depthValue += flickerValue * 0.2f;
-    
+
     // Apply motion amplification
     float motionAmplifier = 1.0f + depth.getValuef() * (float)Math.sin(timeAccum * 2);
     depthValue *= motionAmplifier;
-    
+
     // Invert if needed
     if (invertDepth.getValueb()) {
       depthValue = -depthValue;
     }
-    
+
     return Math.max(-1f, Math.min(1f, depthValue));
   }
 
   private int generateDepthColor(float depthValue, float u, float v) {
     // Map depth to brightness with illusion enhancement
     float brightness = 30f + 70f * (0.5f + 0.5f * depthValue);
-    
+
     // Create depth-based color zones
     float normalizedDepth = (depthValue + 1f) * 0.5f;
     int hueIndex = (int)(normalizedDepth * HUES.length) % HUES.length;
     float hue = HUES[hueIndex];
-    
+
     // Add fracture-based hue distortion
     float fractureShift = (float)Math.sin(u * 5 + v * 3 + timeAccum * 3) * fracture.getValuef() * 20f;
     hue = (hue + fractureShift + 360f) % 360f;
-    
+
     // Saturation varies with depth perception
     float saturation = 40f + 60f * Math.abs(depthValue);
-    
+
     // Add flicker to brightness for depth illusion
     float flickerBrightness = (float)Math.sin(timeAccum * 12 + u * 8 + v * 6) * flicker.getValuef() * 20f;
     brightness += flickerBrightness;
     brightness = Math.max(10f, Math.min(100f, brightness));
-    
+
     return LXColor.hsb(hue, saturation, brightness);
   }
 }

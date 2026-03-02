@@ -4,19 +4,18 @@ import apotheneum.Apotheneum;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.studio.LXStudio.UI;
 import heronarts.lx.studio.ui.device.UIDevice;
 import heronarts.lx.studio.ui.device.UIDeviceControls;
 import heronarts.lx.parameter.CompoundParameter;
-import heronarts.lx.parameter.DiscreteParameter;
 import heronarts.lx.parameter.TriggerParameter;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
 
 @LXCategory("Apotheneum/doved")
-@LXComponentName("Fireflies")
+@LXComponent.Name("Fireflies")
 public class Fireflies extends ApotheneumPattern implements UIDeviceControls<Fireflies> {
 
   // Control parameters
@@ -99,7 +98,7 @@ public class Fireflies extends ApotheneumPattern implements UIDeviceControls<Fir
       float speedMultiplier = (float) Math.pow(Math.random(), 0.5); // Bias toward slower speeds
       speedMultiplier = speedMultiplier * SPEED_VARIATION + 0.3f; // Range: 0.3 to 1.3x base speed
       this.speed = MOVE_SPEED * speedMultiplier;
-      
+
       // Faster fireflies live shorter lives (more realistic)
       float speedLifespanFactor = 1.5f - speedMultiplier; // Faster = shorter life
       double minLife = LIFESPAN_MIN * 1000 * speedLifespanFactor; // Convert to ms
@@ -312,8 +311,8 @@ public class Fireflies extends ApotheneumPattern implements UIDeviceControls<Fir
   }
 
   private void setPixelOnShape(float ringX, float ringY, int color, int shapeType) {
-    int ringIndex = (int) Math.round(ringY);
-    int pointIndex = (int) Math.round(ringX);
+    int ringIndex = Math.round(ringY);
+    int pointIndex = Math.round(ringX);
 
     int surfaceMode = SURFACE_BOTH; // Always render on both surfaces
 
@@ -370,7 +369,7 @@ public class Fireflies extends ApotheneumPattern implements UIDeviceControls<Fir
   }
 
   private boolean isInDoorArea(float ringX, float ringY, int shapeType) {
-    int ringIndex = (int) Math.round(ringY);
+    int ringIndex = Math.round(ringY);
     int ringHeight = (shapeType == 0) ? Apotheneum.GRID_HEIGHT : Apotheneum.CYLINDER_HEIGHT;
     int ringLength = (shapeType == 0) ? Apotheneum.Cube.Ring.LENGTH : Apotheneum.Cylinder.Ring.LENGTH;
 
@@ -380,7 +379,7 @@ public class Fireflies extends ApotheneumPattern implements UIDeviceControls<Fir
 
     // Check if at the bottom where doors are
     if (ringIndex >= ringHeight - Apotheneum.DOOR_HEIGHT) {
-      int ringPos = (int) Math.round(ringX);
+      int ringPos = Math.round(ringX);
       int wrappedPos = ((ringPos % ringLength) + ringLength) % ringLength;
 
       if (shapeType == 0) {

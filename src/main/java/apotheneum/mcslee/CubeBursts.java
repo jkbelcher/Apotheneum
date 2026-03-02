@@ -25,7 +25,6 @@ import heronarts.glx.ui.component.UIKnob;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.parameter.BooleanParameter;
 import heronarts.lx.studio.LXStudio.UI;
 import heronarts.lx.studio.ui.device.UIDevice;
@@ -33,7 +32,7 @@ import heronarts.lx.studio.ui.device.UIDeviceControls;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Cube Bursts")
+@LXComponent.Name("Cube Bursts")
 @LXComponent.Description("MIDI reactive emanations on the cube faces")
 public class CubeBursts extends Bursts implements ApotheneumPattern.Midi, UIDeviceControls<CubeBursts> {
 

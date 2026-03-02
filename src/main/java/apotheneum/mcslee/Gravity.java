@@ -23,7 +23,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.LXLayer;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
@@ -38,7 +37,7 @@ import heronarts.lx.studio.ui.device.UIDeviceControls;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Gravity")
+@LXComponent.Name("Gravity")
 @LXComponent.Description("Objects moving under gravitational forces")
 public class Gravity extends ApotheneumPattern implements UIDeviceControls<Gravity> {
 

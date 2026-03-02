@@ -22,7 +22,6 @@ import heronarts.glx.ui.component.UIKnob;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.ColorParameter;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
@@ -37,7 +36,7 @@ import apotheneum.ApotheneumPattern;
 import java.util.List;
 import java.util.ArrayList;
 
-@LXComponentName("Quilt")
+@LXComponent.Name("Quilt")
 @LXCategory("Apotheneum/mcslee")
 @LXComponent.Description("A quilted mesh of linear segments overlapping horizontally and vertically")
 public class Quilt extends ApotheneumPattern implements UIDeviceControls<Quilt> {

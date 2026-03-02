@@ -21,14 +21,13 @@ package apotheneum.core;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.parameter.BooleanParameter;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.pattern.LXPattern;
 
 @LXCategory("Apotheneum/core")
-@LXComponentName("Motors")
+@LXComponent.Name("Motors")
 @LXComponent.Description("Generates haptic motor movement with braking function")
 public class ApotheneumMotors extends LXPattern {
 

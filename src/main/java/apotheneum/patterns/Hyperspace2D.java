@@ -4,7 +4,7 @@ import apotheneum.Apotheneum;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.parameter.BooleanParameter;
 import heronarts.lx.parameter.CompoundParameter;
@@ -16,7 +16,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @LXCategory("Apotheneum")
-@LXComponentName("Hyperspace2D")
+@LXComponent.Name("Hyperspace2D")
 public class Hyperspace2D extends ApotheneumPattern implements UIDeviceControls<Hyperspace2D> {
 
   // Star particle moving in 2D face space

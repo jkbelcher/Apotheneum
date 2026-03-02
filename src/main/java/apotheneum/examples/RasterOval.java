@@ -6,14 +6,14 @@ import java.awt.Graphics2D;
 import apotheneum.ApotheneumRasterPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.studio.LXStudio.UI;
 import heronarts.lx.studio.ui.device.UIDevice;
 import heronarts.lx.studio.ui.device.UIDeviceControls;
 
 @LXCategory("Apotheneum/Examples")
-@LXComponentName("Raster Oval")
+@LXComponent.Name("Raster Oval")
 public class RasterOval extends ApotheneumRasterPattern implements UIDeviceControls<RasterOval> {
 
   public final CompoundParameter width =

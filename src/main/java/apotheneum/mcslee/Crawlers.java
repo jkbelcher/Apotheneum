@@ -24,7 +24,6 @@ import heronarts.glx.ui.component.UIKnob;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.parameter.LXParameter;
 import heronarts.lx.parameter.TriggerParameter;
 import heronarts.lx.utils.LXUtils;
@@ -37,7 +36,7 @@ import heronarts.lx.studio.ui.device.UIDevice;
 import heronarts.lx.studio.ui.device.UIDeviceControls;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Crawlers")
+@LXComponent.Name("Crawlers")
 @LXComponent.Description("Snake-like objects crawling around the surfaces")
 public class Crawlers extends ApotheneumPattern implements UIDeviceControls<Crawlers> {
 

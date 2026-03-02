@@ -23,7 +23,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.modulator.SawLFO;
@@ -33,7 +32,7 @@ import heronarts.lx.parameter.FunctionalParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("DNA Helix")
+@LXComponent.Name("DNA Helix")
 @LXComponent.Description("Morphing double-helix with noise deformation")
 public class DNAHelix extends ApotheneumPattern {
 

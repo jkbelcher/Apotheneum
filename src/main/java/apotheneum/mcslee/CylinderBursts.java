@@ -24,13 +24,12 @@ import heronarts.glx.ui.component.UIKnob;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.studio.LXStudio.UI;
 import heronarts.lx.studio.ui.device.UIDevice;
 import heronarts.lx.studio.ui.device.UIDeviceControls;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Cylinder Bursts")
+@LXComponent.Name("Cylinder Bursts")
 @LXComponent.Description("MIDI reactive emanations on the cylinder")
 public class CylinderBursts extends Bursts implements UIDeviceControls<CylinderBursts> {
 

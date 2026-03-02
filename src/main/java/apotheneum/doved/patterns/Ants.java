@@ -4,7 +4,7 @@ import apotheneum.Apotheneum;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.studio.LXStudio.UI;
 import heronarts.lx.studio.ui.device.UIDevice;
 import heronarts.lx.studio.ui.device.UIDeviceControls;
@@ -17,7 +17,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @LXCategory("Apotheneum/doved")
-@LXComponentName("Ants")
+@LXComponent.Name("Ants")
 public class Ants extends ApotheneumPattern implements UIDeviceControls<Ants> {
 
   // Dynamic coordinate system based on shape selection

@@ -26,7 +26,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
 import heronarts.lx.model.LXPoint;
@@ -34,7 +33,7 @@ import heronarts.lx.modulator.Damper;
 import heronarts.lx.parameter.CompoundDiscreteParameter;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Abacus")
+@LXComponent.Name("Abacus")
 @LXComponent.Description("Simulates the operation of the abacus")
 public class Abacus extends ApotheneumPattern {
 

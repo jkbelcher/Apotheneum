@@ -9,14 +9,14 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.BooleanParameter;
 import heronarts.lx.parameter.CompoundParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Dust Pulse")
+@LXComponent.Name("Dust Pulse")
 public class DustPulse extends ApotheneumPattern {
 
   private final CompoundParameter speed = new CompoundParameter("Speed", 0.7, 0.1, 3.0)

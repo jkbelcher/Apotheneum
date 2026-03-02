@@ -23,7 +23,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
 import heronarts.lx.model.LXPoint;
@@ -39,7 +38,7 @@ import heronarts.glx.ui.component.UILabel;
 import heronarts.glx.ui.vg.VGraphics;
 
 @LXCategory("Apotheneum/Test")
-@LXComponentName("Apotheneum Test")
+@LXComponent.Name("Apotheneum Test")
 @LXComponent.Description("Test Routines for Apotheneum mapping")
 public class ApotheneumTest extends ApotheneumPattern implements UIDeviceControls<ApotheneumTest> {
 

@@ -4,14 +4,14 @@ package apotheneum.thesilveresa;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Tri-fold Fire")
+@LXComponent.Name("Tri-fold Fire")
 public class TriFoldFire extends ApotheneumPattern {
 
   final CompoundParameter triangleSize = new CompoundParameter("Scale", 3, 1, 10);

@@ -23,7 +23,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
 import heronarts.lx.model.LXPoint;
@@ -32,7 +31,7 @@ import heronarts.lx.parameter.DiscreteParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/Test")
-@LXComponentName("Strip Diagnostic")
+@LXComponent.Name("Strip Diagnostic")
 @LXComponent.Description("Test Routine to light sequences on strips")
 public class StripDiagnostic extends ApotheneumPattern {
 

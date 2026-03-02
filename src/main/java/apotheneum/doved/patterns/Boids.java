@@ -22,7 +22,7 @@ import apotheneum.Apotheneum;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.parameter.CompoundDiscreteParameter;
 import heronarts.lx.parameter.CompoundParameter;
@@ -38,7 +38,7 @@ import java.util.List;
 import java.util.Map;
 
 @LXCategory("Apotheneum/doved")
-@LXComponentName("Boids")
+@LXComponent.Name("Boids")
 public class Boids extends ApotheneumPattern implements UIDeviceControls<Boids> {
 
   // Dynamic coordinate system based on shape selection

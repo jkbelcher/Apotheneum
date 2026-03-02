@@ -9,14 +9,14 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Memory Trace")
+@LXComponent.Name("Memory Trace")
 public class MemoryTrace extends ApotheneumPattern {
 
   private final CompoundParameter speed = new CompoundParameter("Speed", 0.5, 0.1, 2.0)

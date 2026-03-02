@@ -23,7 +23,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.LXLayer;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.midi.MidiNoteOn;
@@ -42,7 +41,7 @@ import heronarts.lx.studio.ui.device.UIDeviceControls;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Raindrops")
+@LXComponent.Name("Raindrops")
 @LXComponent.Description("Accelerating raindrops that splash onto the cube/cylinder base")
 public class Raindrops extends ApotheneumPattern implements ApotheneumPattern.Midi, UIDeviceControls<Raindrops> {
 

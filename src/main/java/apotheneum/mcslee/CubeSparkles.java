@@ -26,7 +26,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.midi.MidiNoteOn;
 import heronarts.lx.model.LXModel;
@@ -39,7 +38,7 @@ import heronarts.lx.parameter.TriggerParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Cube Sparkles")
+@LXComponent.Name("Cube Sparkles")
 @LXComponent.Description("MIDI reactive sparkles on the cube faces")
 public class CubeSparkles extends ApotheneumPattern implements ApotheneumPattern.Midi {
 

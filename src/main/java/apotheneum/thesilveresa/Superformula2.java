@@ -9,7 +9,7 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.BooleanParameter;
@@ -17,7 +17,7 @@ import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.DiscreteParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Superformula 2")
+@LXComponent.Name("Superformula 2")
 public class Superformula2 extends ApotheneumPattern {
 
   // Pattern selection and morphing

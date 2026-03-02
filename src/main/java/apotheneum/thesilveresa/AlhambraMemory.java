@@ -3,7 +3,7 @@ package apotheneum.thesilveresa;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
@@ -14,7 +14,7 @@ import java.awt.image.BufferedImage;
 import java.io.IOException;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Alhambra Memory")
+@LXComponent.Name("Alhambra Memory")
 public class AlhambraMemory extends ApotheneumPattern {
 
   private BufferedImage tileImage;

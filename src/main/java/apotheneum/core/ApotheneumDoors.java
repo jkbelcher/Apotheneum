@@ -23,13 +23,12 @@ import apotheneum.ApotheneumEffect;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
 import heronarts.lx.parameter.BooleanParameter;
 
 @LXCategory("Apotheneum/core")
-@LXComponentName("Doors")
+@LXComponent.Name("Doors")
 @LXComponent.Description("Masks out any colors on the virtual pixels where there are Apotheneum doorways")
 public class ApotheneumDoors extends ApotheneumEffect {
 

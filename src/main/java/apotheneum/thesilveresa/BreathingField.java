@@ -9,13 +9,13 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Breathing Field")
+@LXComponent.Name("Breathing Field")
 public class BreathingField extends ApotheneumPattern {
 
   private final CompoundParameter breathRate = new CompoundParameter("Rate", 0.4, 0.1, 1.2)

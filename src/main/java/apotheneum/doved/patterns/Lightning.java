@@ -10,7 +10,6 @@ import apotheneum.doved.lightning.LightningGenerator;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.midi.MidiNoteOn;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.DiscreteParameter;
@@ -25,7 +24,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 @LXCategory("Apotheneum/doved")
-@LXComponentName("Lightning")
+@LXComponent.Name("Lightning")
 @LXComponent.Description("Lightning strikes using multiple algorithms")
 public class Lightning extends ApotheneumRasterPattern
     implements ApotheneumRasterPattern.Midi, UIDeviceControls<Lightning> {

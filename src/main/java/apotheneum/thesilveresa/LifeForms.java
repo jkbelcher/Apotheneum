@@ -7,13 +7,13 @@ import apotheneum.Apotheneum.Cube.Face;
 import apotheneum.Apotheneum.Cube.Row;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Life Forms")
+@LXComponent.Name("Life Forms")
 public class LifeForms extends ApotheneumPattern {
 
   private final CompoundParameter sizeParam = new CompoundParameter("Size", 0.4, 0.1, 0.6)

@@ -4,7 +4,7 @@ package apotheneum.thesilveresa;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
@@ -12,7 +12,7 @@ import heronarts.lx.parameter.DiscreteParameter;
 import heronarts.lx.parameter.BooleanParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Radial Bloom 2")
+@LXComponent.Name("Radial Bloom 2")
 public class RadialBloom2 extends ApotheneumPattern {
 
   final CompoundParameter scale =

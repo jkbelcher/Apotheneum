@@ -22,14 +22,14 @@ import apotheneum.Apotheneum;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Cylinder Rings")
+@LXComponent.Name("Cylinder Rings")
 public class CylinderRings extends ApotheneumPattern {
 
   public final CompoundParameter pos =

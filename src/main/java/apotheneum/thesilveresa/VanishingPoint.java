@@ -9,13 +9,13 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Vanishing Point")
+@LXComponent.Name("Vanishing Point")
 public class VanishingPoint extends ApotheneumPattern {
 
   private final CompoundParameter convergence = new CompoundParameter("Converge", 0.0, 0.0, 1.0)

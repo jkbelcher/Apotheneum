@@ -23,13 +23,12 @@ import apotheneum.ApotheneumEffect;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Face Mask")
+@LXComponent.Name("Face Mask")
 @LXComponent.Description("Mask the levels of cube faces")
 public class FaceMask extends ApotheneumEffect {
 

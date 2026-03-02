@@ -28,7 +28,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.LXSerializable;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
@@ -47,7 +46,7 @@ import heronarts.lx.utils.LXUtils;
 import heronarts.glx.ui.component.UIDropMenu;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Surfacing")
+@LXComponent.Name("Surfacing")
 @LXComponent.Description("Morphing surface across cube and cylinder")
 public class Surfacing extends ApotheneumPattern implements UIDeviceControls<Surfacing> {
 

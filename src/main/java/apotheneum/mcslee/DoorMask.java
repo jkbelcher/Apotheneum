@@ -23,7 +23,6 @@ import apotheneum.ApotheneumEffect;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXModel;
 import heronarts.lx.model.LXPoint;
@@ -32,7 +31,7 @@ import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Door Mask")
+@LXComponent.Name("Door Mask")
 @LXComponent.Description("Mask the levels around doors")
 public class DoorMask extends ApotheneumEffect {
 

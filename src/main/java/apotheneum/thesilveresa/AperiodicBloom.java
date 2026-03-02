@@ -3,14 +3,14 @@ package apotheneum.thesilveresa;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 import apotheneum.ApotheneumPattern;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Aperiodic Bloom")
+@LXComponent.Name("Aperiodic Bloom")
 public class AperiodicBloom extends ApotheneumPattern {
 
   private final CompoundParameter scale =

@@ -9,15 +9,14 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.BooleanParameter;
 import heronarts.lx.parameter.CompoundParameter;
-import heronarts.lx.parameter.DiscreteParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Platonic Parade")
+@LXComponent.Name("Platonic Parade")
 public class PlatonicParade extends ApotheneumPattern {
 
   private final CompoundParameter speed = new CompoundParameter("Speed", 0.1, 0.0, 1.0)
@@ -67,17 +66,17 @@ public class PlatonicParade extends ApotheneumPattern {
   private float getTileEdgePosition(float u, float v, int tileIdx, int cols, int rows, float sz) {
     TileBounds tileBounds = getTileBounds(u, v, tileIdx, sz);
     if (tileBounds == null) return -1f;
-    
+
     float tilePerimeter = 2 * (tileBounds.width + tileBounds.height);
     float position = 0f;
-    
+
     float localU = (u - tileBounds.centerU) / tileBounds.width * 2;
     float localV = (v - tileBounds.centerV) / tileBounds.height * 2;
-    
+
     float absU = Math.abs(localU);
     float absV = Math.abs(localV);
     float edgeThreshold = 0.8f;
-    
+
     if (absU > edgeThreshold || absV > edgeThreshold) {
       if (absV <= absU) {
         if (localU > 0) {
@@ -95,25 +94,25 @@ public class PlatonicParade extends ApotheneumPattern {
       }
       return position / tilePerimeter;
     }
-    
+
     return -1f;
   }
-  
+
   // Calculate position along cylinder circumference for cylindrical coordinates
   private float getCylinderEdgePosition(float theta, float z, int tileIdx, int rings, int pointsPerRing, float sz) {
     // For cylinder, we can create tile patterns based on theta (circumferential) and z (height)
     // Normalize coordinates to [0,1] range
     float u = theta / (2.0f * (float)Math.PI); // 0 to 1 around circumference
     float v = z; // Assuming z is already normalized
-    
+
     return getTileEdgePosition(u, v, tileIdx, pointsPerRing, rings, sz);
   }
-  
+
   // Helper class to store tile boundary information
   private static class TileBounds {
     float centerU, centerV;
     float width, height;
-    
+
     TileBounds(float centerU, float centerV, float width, float height) {
       this.centerU = centerU;
       this.centerV = centerV;
@@ -121,7 +120,7 @@ public class PlatonicParade extends ApotheneumPattern {
       this.height = height;
     }
   }
-  
+
   private TileBounds getTileBounds(float u, float v, int tileIdx, float sz) {
     switch (tileIdx) {
       case 0:
@@ -133,14 +132,14 @@ public class PlatonicParade extends ApotheneumPattern {
         return null;
     }
   }
-  
+
   private TileBounds getTriangleTileBounds(float u, float v, float sz) {
     float tileSize = 1.0f / sz;
     float centerU = Math.round(u / tileSize) * tileSize;
     float centerV = Math.round(v / tileSize) * tileSize;
     return new TileBounds(centerU, centerV, tileSize * 0.8f, tileSize * 0.8f);
   }
-  
+
   private TileBounds getSquareTileBounds(float u, float v, float sz) {
     float tileSize = 1.0f / sz;
     float centerU = Math.round(u / tileSize) * tileSize;
@@ -151,16 +150,16 @@ public class PlatonicParade extends ApotheneumPattern {
   private float getPerimeterPosition(float u, float v, int cols, int rows) {
     float pixelU = (u + 0.5f) * (cols - 1);
     float pixelV = (v + 0.5f) * (rows - 1);
-    
+
     int px = Math.round(pixelU);
     int py = Math.round(pixelV);
-    
+
     boolean onPerimeter = (px == 0 || px == cols-1 || py == 0 || py == rows-1);
     if (!onPerimeter) return -1f;
-    
+
     float perimeter = 2 * (cols - 1) + 2 * (rows - 1);
     float position = 0f;
-    
+
     if (py == 0) {
       position = px;
     } else if (px == cols - 1) {
@@ -170,7 +169,7 @@ public class PlatonicParade extends ApotheneumPattern {
     } else if (px == 0) {
       position = (cols - 1) + (rows - 1) + (cols - 1) + (rows - 1 - py);
     }
-    
+
     return position / perimeter;
   }
 
@@ -186,7 +185,7 @@ public class PlatonicParade extends ApotheneumPattern {
     float fSeg = segF - idx;
 
     int geoMode = 2;
-    
+
     // Render cube if enabled
     if (geoMode == 0 || geoMode == 2) {
       Cube cube = Apotheneum.cube;
@@ -201,7 +200,7 @@ public class PlatonicParade extends ApotheneumPattern {
         }
       }
     }
-    
+
     // Render cylinder if enabled
     if (geoMode == 1 || geoMode == 2) {
       Cylinder cylinder = Apotheneum.cylinder;
@@ -218,7 +217,7 @@ public class PlatonicParade extends ApotheneumPattern {
     float invCols = 1.0f / Math.max(1, cols - 1);
     float invRows = 1.0f / Math.max(1, rows - 1);
     float sz = size.getValuef();
-    
+
     for (Row row : face.rows) {
       for (int cx = 0; cx < cols; cx++) {
         LXPoint p = row.points[cx];
@@ -235,10 +234,10 @@ public class PlatonicParade extends ApotheneumPattern {
             boolean leftNeighbor = (cx - 1 >= 0) ? shapeTest(currIdx, (cx - 1) * invCols - 0.5f, v, sz) : false;
             boolean upNeighbor = (row.index + 1 < rows) ? shapeTest(currIdx, u, (row.index + 1) * invRows - 0.5f, sz) : false;
             boolean downNeighbor = (row.index - 1 >= 0) ? shapeTest(currIdx, u, (row.index - 1) * invRows - 0.5f, sz) : false;
-            
+
             isEdge = !rightNeighbor || !leftNeighbor || !upNeighbor || !downNeighbor;
           }
-          
+
           if (isEdge) {
             float brightness = calculateEdgeBrightness(u, v, t, currIdx, cols, rows, sz);
             colors[p.index] = LXColor.hsb(HUES[currIdx], sat.getValuef(), brightness);
@@ -253,12 +252,12 @@ public class PlatonicParade extends ApotheneumPattern {
       }
     }
   }
-  
+
   private void processCylinder(Cylinder cylinder, int idx, float fSeg) {
     float t = (lx.engine.nowMillis % 60000) / 1000.0f;
     float sz = size.getValuef();
     final float stretchFactor = 0.4f;
-      
+
     // Build faces array
     Cylinder.Orientation[] faces = (cylinder.interior != null)
       ? new Cylinder.Orientation[]{ cylinder.exterior, cylinder.interior }
@@ -331,7 +330,7 @@ public class PlatonicParade extends ApotheneumPattern {
     }
   }
 }
-  
+
   // Calculate edge brightness for cube faces
   private float calculateEdgeBrightness(float u, float v, float t, int currIdx, int cols, int rows, float sz) {
     float animSpeed = edgeSpeed.getValuef();
@@ -339,9 +338,9 @@ public class PlatonicParade extends ApotheneumPattern {
     float pulseAmount = pulseDepth.getValuef() / 100.0f;
     float waveFreq = waveLength.getValuef();
     int mode = (int)animMode.getValuef();
-    
+
     float brightnessModulation = 0f;
-    
+
     switch (mode) {
       case 0: // Tile Chase
         float tileEdgePos = getTileEdgePosition(u, v, currIdx, cols, rows, sz);
@@ -357,32 +356,32 @@ public class PlatonicParade extends ApotheneumPattern {
           }
         }
         break;
-        
+
       case 1: // Radial
         float dist = (float)Math.sqrt(u * u + v * v);
         float radialPhase = (t * animSpeed * 2.0f) - (dist * waveFreq);
         brightnessModulation = 0.3f + 0.7f * (0.5f + 0.5f * (float)Math.sin(radialPhase));
         break;
-        
+
       case 2: // Serpentine
         float serpentine = (float)Math.sin(t * animSpeed * 2.0f + (u + v) * waveFreq);
         brightnessModulation = 0.2f + 0.8f * (0.5f + 0.5f * serpentine);
         break;
-        
+
       case 3: // Simple pulse
       default:
         float pulse = (float)Math.sin(t * animSpeed * 3.0f);
         brightnessModulation = 0.4f + 0.6f * (0.5f + 0.5f * pulse);
         break;
     }
-    
+
     float staticBright = 1.0f;
     float animatedBright = brightnessModulation;
     float finalModulation = staticBright + (animatedBright - staticBright) * pulseAmount;
-    
+
     return Math.max(5f, Math.min(100f, baseBright * finalModulation));
   }
-  
+
   // Calculate edge brightness for cylinder
   private float calculateCylinderEdgeBrightness(float theta, float z, float t, int currIdx,
                                                int rings, int pointsPerRing, float sz) {
@@ -391,13 +390,13 @@ public class PlatonicParade extends ApotheneumPattern {
     float pulseAmount = pulseDepth.getValuef() / 100.0f;
     float waveFreq = waveLength.getValuef();
     int mode = (int)animMode.getValuef();
-    
+
     float brightnessModulation = 0f;
-    
+
     // Convert cylindrical coordinates to UV for consistency
     float u = theta / (2.0f * (float)Math.PI) - 0.5f;
     float v = z - 0.5f;
-    
+
     switch (mode) {
       case 0: // Tile Chase - adapted for cylindrical coordinates
         float tileEdgePos = getCylinderEdgePosition(theta, z, currIdx, rings, pointsPerRing, sz);
@@ -410,51 +409,51 @@ public class PlatonicParade extends ApotheneumPattern {
           brightnessModulation = 0.2f + 0.8f * (float)Math.sin((circumPos + chasePhase) * Math.PI * 4);
         }
         break;
-        
+
       case 1: // Radial - from cylinder axis
         float radialDist = (float)Math.sqrt(u * u + v * v);
         float radialPhase = (t * animSpeed * 2.0f) - (radialDist * waveFreq);
         brightnessModulation = 0.3f + 0.7f * (0.5f + 0.5f * (float)Math.sin(radialPhase));
         break;
-        
+
       case 2: // Serpentine - helical pattern
         float helical = (float)Math.sin(t * animSpeed * 2.0f + theta * waveFreq + z * waveFreq * 2);
         brightnessModulation = 0.2f + 0.8f * (0.5f + 0.5f * helical);
         break;
-        
+
       case 3: // Simple pulse
       default:
         float pulse = (float)Math.sin(t * animSpeed * 3.0f);
         brightnessModulation = 0.4f + 0.6f * (0.5f + 0.5f * pulse);
         break;
     }
-    
+
     float staticBright = 1.0f;
     float animatedBright = brightnessModulation;
     float finalModulation = staticBright + (animatedBright - staticBright) * pulseAmount;
-    
+
     return Math.max(5f, Math.min(100f, baseBright * finalModulation));
   }
-  
+
   // Helper method for chase effect calculation
   private float calculateChaseEffect(float edgePosition, float t, float animSpeed) {
     float chasePhase = (t * animSpeed) % 1.0f;
     int numRepeats = (int)repeatCount.getValuef();
     float chaseWidthVal = chaseWidth.getValuef();
-    
+
     float brightnessModulation = 0.05f; // Dim background
-    
+
     for (int i = 0; i < numRepeats; i++) {
       float segmentStart = (i / (float)numRepeats + chasePhase) % 1.0f;
       float segmentEnd = (segmentStart + chaseWidthVal) % 1.0f;
-      
+
       boolean inSegment = false;
       if (segmentEnd > segmentStart) {
         inSegment = (edgePosition >= segmentStart && edgePosition <= segmentEnd);
       } else {
         inSegment = (edgePosition >= segmentStart || edgePosition <= segmentEnd);
       }
-      
+
       if (inSegment) {
         float segmentProgress;
         if (segmentEnd > segmentStart) {
@@ -471,7 +470,7 @@ public class PlatonicParade extends ApotheneumPattern {
         break;
       }
     }
-    
+
     return brightnessModulation;
   }
 

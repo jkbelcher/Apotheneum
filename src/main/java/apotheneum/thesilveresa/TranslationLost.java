@@ -3,14 +3,14 @@ package apotheneum.thesilveresa;
 
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.BooleanParameter;
 import apotheneum.ApotheneumPattern;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Translation Lost")
+@LXComponent.Name("Translation Lost")
 public class TranslationLost extends ApotheneumPattern {
 
   private final CompoundParameter jitterAmount = new CompoundParameter("Jitter", 0.1, 0, 1);

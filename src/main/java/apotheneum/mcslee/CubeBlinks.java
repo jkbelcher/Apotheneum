@@ -8,7 +8,6 @@ import heronarts.glx.ui.vg.VGraphics;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.LXDeviceComponent;
 import heronarts.lx.LXLayer;
 import heronarts.lx.color.LXColor;
@@ -30,7 +29,7 @@ import apotheneum.Apotheneum;
 import apotheneum.ApotheneumPattern;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("Cube Blinks")
+@LXComponent.Name("Cube Blinks")
 @LXComponent.Description("MIDI-Triggered ")
 public class CubeBlinks extends ApotheneumPattern implements LXDeviceComponent.Midi, UIDeviceControls<CubeBlinks> {
 

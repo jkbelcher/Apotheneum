@@ -4,13 +4,13 @@ package apotheneum.thesilveresa;
 import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.CompoundParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Quasicrystal Forest")
+@LXComponent.Name("Quasicrystal Forest")
 public class QuasicrystalForest extends ApotheneumPattern {
 
   final CompoundParameter density =

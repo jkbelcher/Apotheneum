@@ -9,7 +9,7 @@ import apotheneum.Apotheneum.Cylinder;
 import apotheneum.Apotheneum.Cylinder.Ring;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
-import heronarts.lx.LXComponentName;
+import heronarts.lx.LXComponent;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.model.LXPoint;
 import heronarts.lx.parameter.BooleanParameter;
@@ -17,7 +17,7 @@ import heronarts.lx.parameter.CompoundParameter;
 import heronarts.lx.parameter.DiscreteParameter;
 
 @LXCategory("Apotheneum/thesilveresa")
-@LXComponentName("Syntax Breaks")
+@LXComponent.Name("Syntax Breaks")
 public class SyntaxBreaks extends ApotheneumPattern {
 
   private final CompoundParameter speed = new CompoundParameter("Speed", 0.1, 0.0, 1.0)

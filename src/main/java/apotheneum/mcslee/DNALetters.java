@@ -28,7 +28,6 @@ import apotheneum.ApotheneumPattern;
 import heronarts.lx.LX;
 import heronarts.lx.LXCategory;
 import heronarts.lx.LXComponent;
-import heronarts.lx.LXComponentName;
 import heronarts.lx.color.LXColor;
 import heronarts.lx.midi.MidiNoteOn;
 import heronarts.lx.parameter.CompoundDiscreteParameter;
@@ -36,7 +35,7 @@ import heronarts.lx.parameter.TriggerParameter;
 import heronarts.lx.utils.LXUtils;
 
 @LXCategory("Apotheneum/mcslee")
-@LXComponentName("DNA Letters")
+@LXComponent.Name("DNA Letters")
 @LXComponent.Description("ACTG base pair letters on the cube faces")
 public class DNALetters extends ApotheneumPattern implements ApotheneumPattern.Midi {
 
